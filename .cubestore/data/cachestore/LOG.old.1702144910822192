@@ -1,0 +1,1931 @@
+2023/12/07-10:55:28.446059 140115360208640 RocksDB version: 7.9.2
+2023/12/07-10:55:28.446443 140115360208640 Compile date 2022-12-22 09:30:39
+2023/12/07-10:55:28.446447 140115360208640 DB SUMMARY
+2023/12/07-10:55:28.446448 140115360208640 DB Session ID:  97BE3E0OEOJHN8BN9S9G
+2023/12/07-10:55:28.447569 140115360208640 CURRENT file:  CURRENT
+2023/12/07-10:55:28.447573 140115360208640 IDENTITY file:  IDENTITY
+2023/12/07-10:55:28.447759 140115360208640 MANIFEST file:  MANIFEST-000005 size: 181 Bytes
+2023/12/07-10:55:28.447765 140115360208640 SST files in /cube/conf/.cubestore/data/cachestore dir, Total Num: 1, files: 000011.sst 
+2023/12/07-10:55:28.447767 140115360208640 Write Ahead Log file in /cube/conf/.cubestore/data/cachestore: 000010.log size: 133 ; 
+2023/12/07-10:55:28.447769 140115360208640                         Options.error_if_exists: 0
+2023/12/07-10:55:28.447770 140115360208640                       Options.create_if_missing: 1
+2023/12/07-10:55:28.447771 140115360208640                         Options.paranoid_checks: 1
+2023/12/07-10:55:28.447772 140115360208640             Options.flush_verify_memtable_count: 1
+2023/12/07-10:55:28.447773 140115360208640                               Options.track_and_verify_wals_in_manifest: 0
+2023/12/07-10:55:28.447774 140115360208640        Options.verify_sst_unique_id_in_manifest: 1
+2023/12/07-10:55:28.447775 140115360208640                                     Options.env: 0x55fa3bdcf408
+2023/12/07-10:55:28.447776 140115360208640                                      Options.fs: PosixFileSystem
+2023/12/07-10:55:28.447778 140115360208640                                Options.info_log: 0x7f6f18015f60
+2023/12/07-10:55:28.447779 140115360208640                Options.max_file_opening_threads: 16
+2023/12/07-10:55:28.447780 140115360208640                              Options.statistics: (nil)
+2023/12/07-10:55:28.447781 140115360208640                               Options.use_fsync: 0
+2023/12/07-10:55:28.447782 140115360208640                       Options.max_log_file_size: 0
+2023/12/07-10:55:28.447783 140115360208640                  Options.max_manifest_file_size: 1073741824
+2023/12/07-10:55:28.447784 140115360208640                   Options.log_file_time_to_roll: 0
+2023/12/07-10:55:28.447785 140115360208640                       Options.keep_log_file_num: 1000
+2023/12/07-10:55:28.447786 140115360208640                    Options.recycle_log_file_num: 0
+2023/12/07-10:55:28.447787 140115360208640                         Options.allow_fallocate: 1
+2023/12/07-10:55:28.447788 140115360208640                        Options.allow_mmap_reads: 0
+2023/12/07-10:55:28.447789 140115360208640                       Options.allow_mmap_writes: 0
+2023/12/07-10:55:28.447790 140115360208640                        Options.use_direct_reads: 0
+2023/12/07-10:55:28.447791 140115360208640                        Options.use_direct_io_for_flush_and_compaction: 0
+2023/12/07-10:55:28.447792 140115360208640          Options.create_missing_column_families: 0
+2023/12/07-10:55:28.447793 140115360208640                              Options.db_log_dir: 
+2023/12/07-10:55:28.447794 140115360208640                                 Options.wal_dir: 
+2023/12/07-10:55:28.447795 140115360208640                Options.table_cache_numshardbits: 6
+2023/12/07-10:55:28.447796 140115360208640                         Options.WAL_ttl_seconds: 330
+2023/12/07-10:55:28.447797 140115360208640                       Options.WAL_size_limit_MB: 0
+2023/12/07-10:55:28.447798 140115360208640                        Options.max_write_batch_group_size_bytes: 1048576
+2023/12/07-10:55:28.447800 140115360208640             Options.manifest_preallocation_size: 4194304
+2023/12/07-10:55:28.447801 140115360208640                     Options.is_fd_close_on_exec: 1
+2023/12/07-10:55:28.447802 140115360208640                   Options.advise_random_on_open: 1
+2023/12/07-10:55:28.447803 140115360208640                    Options.db_write_buffer_size: 0
+2023/12/07-10:55:28.447804 140115360208640                    Options.write_buffer_manager: 0x7f6ef4004c60
+2023/12/07-10:55:28.447805 140115360208640         Options.access_hint_on_compaction_start: 1
+2023/12/07-10:55:28.447811 140115360208640           Options.random_access_max_buffer_size: 1048576
+2023/12/07-10:55:28.447812 140115360208640                      Options.use_adaptive_mutex: 0
+2023/12/07-10:55:28.447813 140115360208640                            Options.rate_limiter: (nil)
+2023/12/07-10:55:28.447814 140115360208640     Options.sst_file_manager.rate_bytes_per_sec: 0
+2023/12/07-10:55:28.447815 140115360208640                       Options.wal_recovery_mode: 2
+2023/12/07-10:55:28.447816 140115360208640                  Options.enable_thread_tracking: 0
+2023/12/07-10:55:28.447817 140115360208640                  Options.enable_pipelined_write: 0
+2023/12/07-10:55:28.447818 140115360208640                  Options.unordered_write: 0
+2023/12/07-10:55:28.447819 140115360208640         Options.allow_concurrent_memtable_write: 1
+2023/12/07-10:55:28.447820 140115360208640      Options.enable_write_thread_adaptive_yield: 1
+2023/12/07-10:55:28.447821 140115360208640             Options.write_thread_max_yield_usec: 100
+2023/12/07-10:55:28.447822 140115360208640            Options.write_thread_slow_yield_usec: 3
+2023/12/07-10:55:28.447824 140115360208640                               Options.row_cache: None
+2023/12/07-10:55:28.447824 140115360208640                              Options.wal_filter: None
+2023/12/07-10:55:28.447826 140115360208640             Options.avoid_flush_during_recovery: 0
+2023/12/07-10:55:28.447827 140115360208640             Options.allow_ingest_behind: 0
+2023/12/07-10:55:28.447828 140115360208640             Options.two_write_queues: 0
+2023/12/07-10:55:28.447828 140115360208640             Options.manual_wal_flush: 0
+2023/12/07-10:55:28.447829 140115360208640             Options.wal_compression: 0
+2023/12/07-10:55:28.447830 140115360208640             Options.atomic_flush: 0
+2023/12/07-10:55:28.447831 140115360208640             Options.avoid_unnecessary_blocking_io: 0
+2023/12/07-10:55:28.447832 140115360208640                 Options.persist_stats_to_disk: 0
+2023/12/07-10:55:28.447833 140115360208640                 Options.write_dbid_to_manifest: 0
+2023/12/07-10:55:28.447834 140115360208640                 Options.log_readahead_size: 0
+2023/12/07-10:55:28.447835 140115360208640                 Options.file_checksum_gen_factory: Unknown
+2023/12/07-10:55:28.447837 140115360208640                 Options.best_efforts_recovery: 0
+2023/12/07-10:55:28.447838 140115360208640                Options.max_bgerror_resume_count: 2147483647
+2023/12/07-10:55:28.447839 140115360208640            Options.bgerror_resume_retry_interval: 1000000
+2023/12/07-10:55:28.447840 140115360208640             Options.allow_data_in_errors: 0
+2023/12/07-10:55:28.447841 140115360208640             Options.db_host_id: __hostname__
+2023/12/07-10:55:28.447842 140115360208640             Options.enforce_single_del_contracts: true
+2023/12/07-10:55:28.447843 140115360208640             Options.max_background_jobs: 2
+2023/12/07-10:55:28.447844 140115360208640             Options.max_background_compactions: -1
+2023/12/07-10:55:28.447845 140115360208640             Options.max_subcompactions: 1
+2023/12/07-10:55:28.447846 140115360208640             Options.avoid_flush_during_shutdown: 0
+2023/12/07-10:55:28.447847 140115360208640           Options.writable_file_max_buffer_size: 1048576
+2023/12/07-10:55:28.447848 140115360208640             Options.delayed_write_rate : 16777216
+2023/12/07-10:55:28.447850 140115360208640             Options.max_total_wal_size: 0
+2023/12/07-10:55:28.447851 140115360208640             Options.delete_obsolete_files_period_micros: 21600000000
+2023/12/07-10:55:28.447852 140115360208640                   Options.stats_dump_period_sec: 600
+2023/12/07-10:55:28.447853 140115360208640                 Options.stats_persist_period_sec: 600
+2023/12/07-10:55:28.447854 140115360208640                 Options.stats_history_buffer_size: 1048576
+2023/12/07-10:55:28.447855 140115360208640                          Options.max_open_files: -1
+2023/12/07-10:55:28.447856 140115360208640                          Options.bytes_per_sync: 0
+2023/12/07-10:55:28.447859 140115360208640                      Options.wal_bytes_per_sync: 0
+2023/12/07-10:55:28.447860 140115360208640                   Options.strict_bytes_per_sync: 0
+2023/12/07-10:55:28.447861 140115360208640       Options.compaction_readahead_size: 0
+2023/12/07-10:55:28.447862 140115360208640                  Options.max_background_flushes: -1
+2023/12/07-10:55:28.447863 140115360208640 Compression algorithms supported:
+2023/12/07-10:55:28.447864 140115360208640 	kZSTDNotFinalCompression supported: 1
+2023/12/07-10:55:28.447866 140115360208640 	kZSTD supported: 1
+2023/12/07-10:55:28.447867 140115360208640 	kXpressCompression supported: 0
+2023/12/07-10:55:28.447868 140115360208640 	kLZ4HCCompression supported: 0
+2023/12/07-10:55:28.447869 140115360208640 	kLZ4Compression supported: 0
+2023/12/07-10:55:28.447870 140115360208640 	kBZip2Compression supported: 0
+2023/12/07-10:55:28.447871 140115360208640 	kZlibCompression supported: 0
+2023/12/07-10:55:28.447873 140115360208640 	kSnappyCompression supported: 1
+2023/12/07-10:55:28.447875 140115360208640 Fast CRC32 supported: Not supported on x86
+2023/12/07-10:55:28.447876 140115360208640 DMutex implementation: pthread_mutex_t
+2023/12/07-10:55:28.450989 140115360208640 [db/version_set.cc:5528] Recovering from manifest file: /cube/conf/.cubestore/data/cachestore/MANIFEST-000005
+2023/12/07-10:55:28.451516 140115360208640 [db/column_family.cc:632] --------------- Options for column family [default]:
+2023/12/07-10:55:28.451520 140115360208640               Options.comparator: leveldb.BytewiseComparator
+2023/12/07-10:55:28.451522 140115360208640           Options.merge_operator: None
+2023/12/07-10:55:28.451523 140115360208640        Options.compaction_filter: None
+2023/12/07-10:55:28.451524 140115360208640        Options.compaction_filter_factory: cache-expire-check
+2023/12/07-10:55:28.451525 140115360208640  Options.sst_partitioner_factory: None
+2023/12/07-10:55:28.451526 140115360208640         Options.memtable_factory: SkipListFactory
+2023/12/07-10:55:28.451527 140115360208640            Options.table_factory: BlockBasedTable
+2023/12/07-10:55:28.451555 140115360208640            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0x7f6f1801bba0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 4
+  no_block_cache: 0
+  block_cache: 0x7f6f18019f00
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.500
+    low_pri_pool_ratio: 0.000
+  block_cache_compressed: (nil)
+  persistent_cache: (nil)
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 5
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+  num_file_reads_for_auto_readahead: 2
+2023/12/07-10:55:28.451557 140115360208640        Options.write_buffer_size: 67108864
+2023/12/07-10:55:28.451558 140115360208640  Options.max_write_buffer_number: 2
+2023/12/07-10:55:28.451559 140115360208640          Options.compression: NoCompression
+2023/12/07-10:55:28.451560 140115360208640                  Options.bottommost_compression: NoCompression
+2023/12/07-10:55:28.451561 140115360208640       Options.prefix_extractor: rocksdb.FixedPrefix
+2023/12/07-10:55:28.451562 140115360208640   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2023/12/07-10:55:28.451563 140115360208640             Options.num_levels: 7
+2023/12/07-10:55:28.451564 140115360208640        Options.min_write_buffer_number_to_merge: 1
+2023/12/07-10:55:28.451566 140115360208640     Options.max_write_buffer_number_to_maintain: 0
+2023/12/07-10:55:28.451567 140115360208640     Options.max_write_buffer_size_to_maintain: 0
+2023/12/07-10:55:28.451568 140115360208640            Options.bottommost_compression_opts.window_bits: -14
+2023/12/07-10:55:28.451569 140115360208640                  Options.bottommost_compression_opts.level: 32767
+2023/12/07-10:55:28.451570 140115360208640               Options.bottommost_compression_opts.strategy: 0
+2023/12/07-10:55:28.451571 140115360208640         Options.bottommost_compression_opts.max_dict_bytes: 0
+2023/12/07-10:55:28.451572 140115360208640         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2023/12/07-10:55:28.451573 140115360208640         Options.bottommost_compression_opts.parallel_threads: 1
+2023/12/07-10:55:28.451574 140115360208640                  Options.bottommost_compression_opts.enabled: false
+2023/12/07-10:55:28.451575 140115360208640         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2023/12/07-10:55:28.451575 140115360208640         Options.bottommost_compression_opts.use_zstd_dict_trainer: true
+2023/12/07-10:55:28.451576 140115360208640            Options.compression_opts.window_bits: -14
+2023/12/07-10:55:28.451577 140115360208640                  Options.compression_opts.level: 32767
+2023/12/07-10:55:28.451578 140115360208640               Options.compression_opts.strategy: 0
+2023/12/07-10:55:28.451579 140115360208640         Options.compression_opts.max_dict_bytes: 0
+2023/12/07-10:55:28.451580 140115360208640         Options.compression_opts.zstd_max_train_bytes: 0
+2023/12/07-10:55:28.451581 140115360208640         Options.compression_opts.use_zstd_dict_trainer: true
+2023/12/07-10:55:28.451582 140115360208640         Options.compression_opts.parallel_threads: 1
+2023/12/07-10:55:28.451583 140115360208640                  Options.compression_opts.enabled: false
+2023/12/07-10:55:28.451583 140115360208640         Options.compression_opts.max_dict_buffer_bytes: 0
+2023/12/07-10:55:28.451584 140115360208640      Options.level0_file_num_compaction_trigger: 4
+2023/12/07-10:55:28.451585 140115360208640          Options.level0_slowdown_writes_trigger: 20
+2023/12/07-10:55:28.451586 140115360208640              Options.level0_stop_writes_trigger: 36
+2023/12/07-10:55:28.451587 140115360208640                   Options.target_file_size_base: 67108864
+2023/12/07-10:55:28.451588 140115360208640             Options.target_file_size_multiplier: 1
+2023/12/07-10:55:28.451589 140115360208640                Options.max_bytes_for_level_base: 268435456
+2023/12/07-10:55:28.451590 140115360208640 Options.level_compaction_dynamic_level_bytes: 0
+2023/12/07-10:55:28.451591 140115360208640          Options.max_bytes_for_level_multiplier: 10.000000
+2023/12/07-10:55:28.451592 140115360208640 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2023/12/07-10:55:28.451593 140115360208640 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2023/12/07-10:55:28.451594 140115360208640 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2023/12/07-10:55:28.451595 140115360208640 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2023/12/07-10:55:28.451596 140115360208640 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2023/12/07-10:55:28.451597 140115360208640 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2023/12/07-10:55:28.451598 140115360208640 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2023/12/07-10:55:28.451599 140115360208640       Options.max_sequential_skip_in_iterations: 8
+2023/12/07-10:55:28.451600 140115360208640                    Options.max_compaction_bytes: 1677721600
+2023/12/07-10:55:28.451601 140115360208640   Options.ignore_max_compaction_bytes_for_input: true
+2023/12/07-10:55:28.451601 140115360208640                        Options.arena_block_size: 1048576
+2023/12/07-10:55:28.451602 140115360208640   Options.soft_pending_compaction_bytes_limit: 68719476736
+2023/12/07-10:55:28.451603 140115360208640   Options.hard_pending_compaction_bytes_limit: 274877906944
+2023/12/07-10:55:28.451606 140115360208640                Options.disable_auto_compactions: 1
+2023/12/07-10:55:28.451607 140115360208640                        Options.compaction_style: kCompactionStyleLevel
+2023/12/07-10:55:28.451608 140115360208640                          Options.compaction_pri: kMinOverlappingRatio
+2023/12/07-10:55:28.451609 140115360208640 Options.compaction_options_universal.size_ratio: 1
+2023/12/07-10:55:28.451610 140115360208640 Options.compaction_options_universal.min_merge_width: 2
+2023/12/07-10:55:28.451611 140115360208640 Options.compaction_options_universal.max_merge_width: 4294967295
+2023/12/07-10:55:28.451612 140115360208640 Options.compaction_options_universal.max_size_amplification_percent: 200
+2023/12/07-10:55:28.451613 140115360208640 Options.compaction_options_universal.compression_size_percent: -1
+2023/12/07-10:55:28.451614 140115360208640 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2023/12/07-10:55:28.451615 140115360208640 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2023/12/07-10:55:28.451616 140115360208640 Options.compaction_options_fifo.allow_compaction: 0
+2023/12/07-10:55:28.451620 140115360208640                   Options.table_properties_collectors: 
+2023/12/07-10:55:28.451621 140115360208640                   Options.inplace_update_support: 0
+2023/12/07-10:55:28.451622 140115360208640                 Options.inplace_update_num_locks: 10000
+2023/12/07-10:55:28.451623 140115360208640               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2023/12/07-10:55:28.451624 140115360208640               Options.memtable_whole_key_filtering: 0
+2023/12/07-10:55:28.451625 140115360208640   Options.memtable_huge_page_size: 0
+2023/12/07-10:55:28.451626 140115360208640                           Options.bloom_locality: 0
+2023/12/07-10:55:28.451626 140115360208640                    Options.max_successive_merges: 0
+2023/12/07-10:55:28.451627 140115360208640                Options.optimize_filters_for_hits: 0
+2023/12/07-10:55:28.451628 140115360208640                Options.paranoid_file_checks: 0
+2023/12/07-10:55:28.451629 140115360208640                Options.force_consistency_checks: 1
+2023/12/07-10:55:28.451630 140115360208640                Options.report_bg_io_stats: 0
+2023/12/07-10:55:28.451631 140115360208640                               Options.ttl: 2592000
+2023/12/07-10:55:28.451632 140115360208640          Options.periodic_compaction_seconds: 2592000
+2023/12/07-10:55:28.451633 140115360208640  Options.preclude_last_level_data_seconds: 0
+2023/12/07-10:55:28.451633 140115360208640    Options.preserve_internal_time_seconds: 0
+2023/12/07-10:55:28.451634 140115360208640                       Options.enable_blob_files: false
+2023/12/07-10:55:28.451635 140115360208640                           Options.min_blob_size: 0
+2023/12/07-10:55:28.451636 140115360208640                          Options.blob_file_size: 268435456
+2023/12/07-10:55:28.451637 140115360208640                   Options.blob_compression_type: NoCompression
+2023/12/07-10:55:28.451638 140115360208640          Options.enable_blob_garbage_collection: false
+2023/12/07-10:55:28.451639 140115360208640      Options.blob_garbage_collection_age_cutoff: 0.250000
+2023/12/07-10:55:28.451640 140115360208640 Options.blob_garbage_collection_force_threshold: 1.000000
+2023/12/07-10:55:28.451641 140115360208640          Options.blob_compaction_readahead_size: 0
+2023/12/07-10:55:28.451642 140115360208640                Options.blob_file_starting_level: 0
+2023/12/07-10:55:28.451643 140115360208640 Options.experimental_mempurge_threshold: 0.000000
+2023/12/07-10:55:28.454595 140115360208640 [db/version_set.cc:5575] Recovered from manifest file:/cube/conf/.cubestore/data/cachestore/MANIFEST-000005 succeeded,manifest_file_number is 5, next_file_number is 13, last_sequence is 9, log_number is 10,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 10
+2023/12/07-10:55:28.454600 140115360208640 [db/version_set.cc:5584] Column family [default] (ID 0), log number is 10
+2023/12/07-10:55:28.455133 140115360208640 [db/db_impl/db_impl_open.cc:539] DB ID: 2b86f24c-fd9b-45ae-87dd-2ff78d3962cb
+2023/12/07-10:55:28.457169 140115360208640 EVENT_LOG_v1 {"time_micros": 1701946528457166, "job": 1, "event": "recovery_started", "wal_files": [10]}
+2023/12/07-10:55:28.457174 140115360208640 [db/db_impl/db_impl_open.cc:1045] Recovering log #10 mode 2
+2023/12/07-10:55:28.458519 140115360208640 EVENT_LOG_v1 {"time_micros": 1701946528458517, "job": 1, "event": "recovery_finished"}
+2023/12/07-10:55:28.458904 140115360208640 [db/version_set.cc:5048] Creating manifest 15
+2023/12/07-10:55:28.471400 140115360208640 [file/delete_scheduler.cc:78] Deleted file /cube/conf/.cubestore/data/cachestore/archive/000004.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2023/12/07-10:55:28.471665 140115360208640 [db/db_impl/db_impl_open.cc:1988] SstFileManager instance 0x7f6f180184d0
+2023/12/07-10:55:28.472421 140115360208640 DB pointer 0x7f6f1801cf80
+2023/12/07-10:55:28.480230 140112830621440 [db/db_impl/db_impl.cc:1218] SetOptions() on column family [default], inputs:
+2023/12/07-10:55:28.480236 140112830621440 [db/db_impl/db_impl.cc:1221] disable_auto_compactions: false
+2023/12/07-10:55:28.480237 140112830621440 [db/db_impl/db_impl.cc:1225] [default] SetOptions() succeeded
+2023/12/07-10:55:28.480238 140112830621440 [options/cf_options.cc:1005]                         write_buffer_size: 67108864
+2023/12/07-10:55:28.480239 140112830621440 [options/cf_options.cc:1007]                   max_write_buffer_number: 2
+2023/12/07-10:55:28.480240 140112830621440 [options/cf_options.cc:1010]                          arena_block_size: 1048576
+2023/12/07-10:55:28.480241 140112830621440 [options/cf_options.cc:1012]               memtable_prefix_bloom_ratio: 0.000000
+2023/12/07-10:55:28.480242 140112830621440 [options/cf_options.cc:1014]               memtable_whole_key_filtering: 0
+2023/12/07-10:55:28.480243 140112830621440 [options/cf_options.cc:1017]                   memtable_huge_page_size: 0
+2023/12/07-10:55:28.480244 140112830621440 [options/cf_options.cc:1020]                     max_successive_merges: 0
+2023/12/07-10:55:28.480245 140112830621440 [options/cf_options.cc:1023]                  inplace_update_num_locks: 10000
+2023/12/07-10:55:28.480247 140112830621440 [options/cf_options.cc:1027]                          prefix_extractor: rocksdb.FixedPrefix.13
+2023/12/07-10:55:28.480247 140112830621440 [options/cf_options.cc:1029]                  disable_auto_compactions: 0
+2023/12/07-10:55:28.480248 140112830621440 [options/cf_options.cc:1031]       soft_pending_compaction_bytes_limit: 68719476736
+2023/12/07-10:55:28.480250 140112830621440 [options/cf_options.cc:1033]       hard_pending_compaction_bytes_limit: 274877906944
+2023/12/07-10:55:28.480251 140112830621440 [options/cf_options.cc:1035]        level0_file_num_compaction_trigger: 4
+2023/12/07-10:55:28.480252 140112830621440 [options/cf_options.cc:1037]            level0_slowdown_writes_trigger: 20
+2023/12/07-10:55:28.480253 140112830621440 [options/cf_options.cc:1039]                level0_stop_writes_trigger: 36
+2023/12/07-10:55:28.480255 140112830621440 [options/cf_options.cc:1041]                      max_compaction_bytes: 1677721600
+2023/12/07-10:55:28.480256 140112830621440 [options/cf_options.cc:1043]     ignore_max_compaction_bytes_for_input: true
+2023/12/07-10:55:28.480257 140112830621440 [options/cf_options.cc:1045]                     target_file_size_base: 67108864
+2023/12/07-10:55:28.480258 140112830621440 [options/cf_options.cc:1047]               target_file_size_multiplier: 1
+2023/12/07-10:55:28.480260 140112830621440 [options/cf_options.cc:1049]                  max_bytes_for_level_base: 268435456
+2023/12/07-10:55:28.480261 140112830621440 [options/cf_options.cc:1051]            max_bytes_for_level_multiplier: 10.000000
+2023/12/07-10:55:28.480263 140112830621440 [options/cf_options.cc:1053]                                       ttl: 2592000
+2023/12/07-10:55:28.480265 140112830621440 [options/cf_options.cc:1055]               periodic_compaction_seconds: 2592000
+2023/12/07-10:55:28.480268 140112830621440 [options/cf_options.cc:1069] max_bytes_for_level_multiplier_additional: 1, 1, 1, 1, 1, 1, 1
+2023/12/07-10:55:28.480269 140112830621440 [options/cf_options.cc:1071]         max_sequential_skip_in_iterations: 8
+2023/12/07-10:55:28.480270 140112830621440 [options/cf_options.cc:1073]          check_flush_compaction_key_order: 1
+2023/12/07-10:55:28.480373 140112830621440 [options/cf_options.cc:1075]                      paranoid_file_checks: 0
+2023/12/07-10:55:28.480376 140112830621440 [options/cf_options.cc:1077]                        report_bg_io_stats: 0
+2023/12/07-10:55:28.480377 140112830621440 [options/cf_options.cc:1079]                               compression: 0
+2023/12/07-10:55:28.480377 140112830621440 [options/cf_options.cc:1082]                        experimental_mempurge_threshold: 0.000000
+2023/12/07-10:55:28.480379 140112830621440 [options/cf_options.cc:1086] compaction_options_universal.size_ratio : 1
+2023/12/07-10:55:28.480380 140112830621440 [options/cf_options.cc:1088] compaction_options_universal.min_merge_width : 2
+2023/12/07-10:55:28.480381 140112830621440 [options/cf_options.cc:1090] compaction_options_universal.max_merge_width : -1
+2023/12/07-10:55:28.480382 140112830621440 [options/cf_options.cc:1093] compaction_options_universal.max_size_amplification_percent : 200
+2023/12/07-10:55:28.480382 140112830621440 [options/cf_options.cc:1096] compaction_options_universal.compression_size_percent : -1
+2023/12/07-10:55:28.480383 140112830621440 [options/cf_options.cc:1098] compaction_options_universal.stop_style : 1
+2023/12/07-10:55:28.480384 140112830621440 [options/cf_options.cc:1101] compaction_options_universal.allow_trivial_move : 0
+2023/12/07-10:55:28.480385 140112830621440 [options/cf_options.cc:1103] compaction_options_universal.incremental        : 0
+2023/12/07-10:55:28.480386 140112830621440 [options/cf_options.cc:1107] compaction_options_fifo.max_table_files_size : 1073741824
+2023/12/07-10:55:28.480386 140112830621440 [options/cf_options.cc:1109] compaction_options_fifo.allow_compaction : 0
+2023/12/07-10:55:28.480387 140112830621440 [options/cf_options.cc:1113]                         enable_blob_files: false
+2023/12/07-10:55:28.480388 140112830621440 [options/cf_options.cc:1115]                             min_blob_size: 0
+2023/12/07-10:55:28.480389 140112830621440 [options/cf_options.cc:1117]                            blob_file_size: 268435456
+2023/12/07-10:55:28.480390 140112830621440 [options/cf_options.cc:1119]                     blob_compression_type: NoCompression
+2023/12/07-10:55:28.480391 140112830621440 [options/cf_options.cc:1121]            enable_blob_garbage_collection: false
+2023/12/07-10:55:28.480392 140112830621440 [options/cf_options.cc:1123]        blob_garbage_collection_age_cutoff: 0.250000
+2023/12/07-10:55:28.480393 140112830621440 [options/cf_options.cc:1125]   blob_garbage_collection_force_threshold: 1.000000
+2023/12/07-10:55:28.480394 140112830621440 [options/cf_options.cc:1127]            blob_compaction_readahead_size: 0
+2023/12/07-10:55:28.480395 140112830621440 [options/cf_options.cc:1129]                  blob_file_starting_level: 0
+2023/12/07-10:55:28.480396 140112830621440 [options/cf_options.cc:1133]                    prepopulate_blob_cache: disable
+2023/12/07-10:55:28.480407 140112830621440 [options/cf_options.cc:1135]                    last_level_temperature: 0
+2023/12/07-10:55:31.473279 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-10:55:31.473316 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 3.0 total, 3.0 interval
+Cumulative writes: 1 writes, 0 keys, 1 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1 writes, 0 syncs, 1.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 1 writes, 0 keys, 1 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 1 writes, 0 syncs, 1.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 3.0 total, 3.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 1 last_copies: 0 last_secs: 6.4e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/07-11:05:31.473786 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-11:05:31.475577 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 603.0 total, 600.0 interval
+Cumulative writes: 81 writes, 0 keys, 81 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 81 writes, 0 syncs, 81.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 603.0 total, 600.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 2 last_copies: 0 last_secs: 4.4e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/07-11:15:31.476430 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-11:15:31.478112 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 1203.0 total, 600.0 interval
+Cumulative writes: 161 writes, 0 keys, 161 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 161 writes, 0 syncs, 161.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 1203.0 total, 600.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 3 last_copies: 0 last_secs: 4.4e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/07-11:25:31.478763 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-11:25:31.478775 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 1803.0 total, 600.0 interval
+Cumulative writes: 211 writes, 0 keys, 211 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 211 writes, 0 syncs, 211.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 50 writes, 0 keys, 50 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 50 writes, 0 syncs, 50.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-11:35:31.479058 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-11:35:31.479068 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 2403.0 total, 600.0 interval
+Cumulative writes: 291 writes, 0 keys, 291 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 291 writes, 0 syncs, 291.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-11:53:07.101435 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-11:53:07.101456 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 3458.6 total, 1055.6 interval
+Cumulative writes: 308 writes, 0 keys, 308 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 307 writes, 0 syncs, 307.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 17 writes, 0 keys, 17 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 16 writes, 0 syncs, 16.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-12:09:18.129017 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-12:09:18.129044 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 4429.7 total, 971.0 interval
+Cumulative writes: 316 writes, 0 keys, 316 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 316 writes, 0 syncs, 316.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 9 writes, 0 syncs, 9.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-12:25:33.417322 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-12:25:33.417339 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 5405.0 total, 975.3 interval
+Cumulative writes: 324 writes, 0 keys, 324 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 323 writes, 0 syncs, 323.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 7 writes, 0 syncs, 7.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-12:35:33.417935 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-12:35:33.417942 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 6005.0 total, 600.0 interval
+Cumulative writes: 341 writes, 0 keys, 341 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 341 writes, 0 syncs, 341.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 17 writes, 0 keys, 17 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 18 writes, 0 syncs, 18.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-12:45:33.418309 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-12:45:33.418315 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 6605.0 total, 600.0 interval
+Cumulative writes: 421 writes, 0 keys, 421 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 421 writes, 0 syncs, 421.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-12:55:33.418844 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-12:55:33.418864 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 7205.0 total, 600.0 interval
+Cumulative writes: 501 writes, 0 keys, 501 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 501 writes, 0 syncs, 501.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 7205.0 total, 6001.9 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 11 last_copies: 0 last_secs: 2.9e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/07-13:05:33.419116 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-13:05:33.419118 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 7805.0 total, 600.0 interval
+Cumulative writes: 581 writes, 0 keys, 581 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 581 writes, 0 syncs, 581.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-13:15:33.419416 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-13:15:33.419418 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 8405.0 total, 600.0 interval
+Cumulative writes: 661 writes, 0 keys, 661 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 661 writes, 0 syncs, 661.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-13:25:33.419697 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-13:25:33.419700 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 9005.0 total, 600.0 interval
+Cumulative writes: 741 writes, 0 keys, 741 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 741 writes, 0 syncs, 741.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-13:35:33.420020 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-13:35:33.420024 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 9605.0 total, 600.0 interval
+Cumulative writes: 821 writes, 0 keys, 821 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 821 writes, 0 syncs, 821.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-13:45:33.420960 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-13:45:33.420966 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 10205.0 total, 600.0 interval
+Cumulative writes: 901 writes, 0 keys, 901 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 901 writes, 0 syncs, 901.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-14:00:38.240774 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-14:00:38.240779 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 11109.8 total, 904.8 interval
+Cumulative writes: 921 writes, 0 keys, 921 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 921 writes, 0 syncs, 921.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 20 writes, 0 keys, 20 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 20 writes, 0 syncs, 20.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-14:10:38.242756 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-14:10:38.244068 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 11709.8 total, 600.0 interval
+Cumulative writes: 1001 writes, 0 keys, 1001 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1001 writes, 0 syncs, 1001.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-14:26:43.242272 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-14:26:43.242361 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 12674.8 total, 965.0 interval
+Cumulative writes: 1009 writes, 0 keys, 1009 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1008 writes, 0 syncs, 1008.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 7 writes, 0 syncs, 7.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 12674.8 total, 5469.8 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 19 last_copies: 0 last_secs: 9.4e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/07-14:38:38.925149 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-14:38:38.925159 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 13390.5 total, 715.7 interval
+Cumulative writes: 1015 writes, 0 keys, 1015 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1015 writes, 0 syncs, 1015.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 6 writes, 0 keys, 6 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 7 writes, 0 syncs, 7.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-14:48:38.925496 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-14:48:38.925500 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 13990.5 total, 600.0 interval
+Cumulative writes: 1049 writes, 0 keys, 1049 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1049 writes, 0 syncs, 1049.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 34 writes, 0 keys, 34 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 34 writes, 0 syncs, 34.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-14:58:38.926108 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-14:58:38.926112 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 14590.5 total, 600.0 interval
+Cumulative writes: 1129 writes, 0 keys, 1129 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1129 writes, 0 syncs, 1129.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-15:08:38.926733 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-15:08:38.926742 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 15190.5 total, 600.0 interval
+Cumulative writes: 1209 writes, 0 keys, 1209 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1209 writes, 0 syncs, 1209.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-15:33:44.535836 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-15:33:44.535855 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 16696.1 total, 1505.6 interval
+Cumulative writes: 1287 writes, 0 keys, 1287 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1287 writes, 0 syncs, 1287.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 78 writes, 0 keys, 78 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 78 writes, 0 syncs, 78.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-15:50:00.317890 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-15:50:00.317903 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 17671.9 total, 975.8 interval
+Cumulative writes: 1295 writes, 0 keys, 1295 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1295 writes, 0 syncs, 1295.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-16:06:15.599681 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-16:06:15.599691 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 18647.1 total, 975.3 interval
+Cumulative writes: 1304 writes, 0 keys, 1304 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1303 writes, 0 syncs, 1303.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 9 writes, 0 keys, 9 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-16:16:15.602357 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-16:16:15.603650 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 19247.2 total, 600.0 interval
+Cumulative writes: 1355 writes, 0 keys, 1355 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1355 writes, 0 syncs, 1355.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 51 writes, 0 keys, 51 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 52 writes, 0 syncs, 52.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 19247.2 total, 6572.4 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 27 last_copies: 0 last_secs: 5e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/07-16:26:15.604438 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-16:26:15.605182 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 19847.2 total, 600.0 interval
+Cumulative writes: 1435 writes, 0 keys, 1435 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1435 writes, 0 syncs, 1435.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-16:36:15.607396 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-16:36:15.608716 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 20447.2 total, 600.0 interval
+Cumulative writes: 1515 writes, 0 keys, 1515 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1515 writes, 0 syncs, 1515.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-16:46:15.616502 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-16:46:15.618567 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 21047.2 total, 600.0 interval
+Cumulative writes: 1595 writes, 0 keys, 1595 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1595 writes, 0 syncs, 1595.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-16:56:15.619220 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-16:56:15.621314 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 21647.2 total, 600.0 interval
+Cumulative writes: 1675 writes, 0 keys, 1675 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1675 writes, 0 syncs, 1675.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-17:06:15.621544 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-17:06:15.622312 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 22247.2 total, 600.0 interval
+Cumulative writes: 1755 writes, 0 keys, 1755 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1755 writes, 0 syncs, 1755.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-17:16:15.624101 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-17:16:15.625680 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 22847.2 total, 600.0 interval
+Cumulative writes: 1835 writes, 0 keys, 1835 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1835 writes, 0 syncs, 1835.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-17:26:15.626109 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-17:26:15.627461 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 23447.2 total, 600.0 interval
+Cumulative writes: 1915 writes, 0 keys, 1915 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1915 writes, 0 syncs, 1915.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-17:45:37.869585 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-17:45:37.869693 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 24609.4 total, 1162.2 interval
+Cumulative writes: 1945 writes, 0 keys, 1945 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1945 writes, 0 syncs, 1945.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 30 writes, 0 keys, 30 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 30 writes, 0 syncs, 30.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 24609.4 total, 5362.3 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 35 last_copies: 0 last_secs: 0.000117 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/07-18:01:52.986905 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-18:01:52.986910 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 25584.5 total, 975.1 interval
+Cumulative writes: 1953 writes, 0 keys, 1953 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1953 writes, 0 syncs, 1953.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-18:17:41.642159 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-18:17:41.642169 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 26533.2 total, 948.7 interval
+Cumulative writes: 1963 writes, 0 keys, 1963 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1962 writes, 0 syncs, 1962.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 10 writes, 0 keys, 10 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 9 writes, 0 syncs, 9.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-18:36:26.403978 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-18:36:26.404001 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 27658.0 total, 1124.8 interval
+Cumulative writes: 1990 writes, 0 keys, 1990 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 1989 writes, 0 syncs, 1989.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 27 writes, 0 keys, 27 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 27 writes, 0 syncs, 27.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-18:57:18.002368 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-18:57:18.002373 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 28909.6 total, 1251.6 interval
+Cumulative writes: 2015 writes, 0 keys, 2015 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2015 writes, 0 syncs, 2015.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 25 writes, 0 keys, 25 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 26 writes, 0 syncs, 26.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-19:13:33.368981 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-19:13:33.368988 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 29884.9 total, 975.4 interval
+Cumulative writes: 2023 writes, 0 keys, 2023 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2023 writes, 0 syncs, 2023.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-19:29:37.040520 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-19:29:37.040525 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 30848.6 total, 963.7 interval
+Cumulative writes: 2031 writes, 0 keys, 2031 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2031 writes, 0 syncs, 2031.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-19:47:10.896299 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-19:47:10.896304 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 31902.4 total, 1053.9 interval
+Cumulative writes: 2050 writes, 0 keys, 2050 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2049 writes, 0 syncs, 2049.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 19 writes, 0 keys, 19 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 18 writes, 0 syncs, 18.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-20:03:26.243929 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-20:03:26.243943 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 32877.8 total, 975.3 interval
+Cumulative writes: 2057 writes, 0 keys, 2057 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2057 writes, 0 syncs, 2057.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 7 writes, 0 keys, 7 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 32877.8 total, 8268.4 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 43 last_copies: 0 last_secs: 1.7e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/07-20:19:41.593017 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-20:19:41.593022 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 33853.1 total, 975.3 interval
+Cumulative writes: 2065 writes, 0 keys, 2065 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2065 writes, 0 syncs, 2065.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-20:30:38.933713 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-20:30:38.933717 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 34510.5 total, 657.3 interval
+Cumulative writes: 2073 writes, 0 keys, 2073 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2073 writes, 0 syncs, 2073.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-20:46:02.540482 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-20:46:02.540486 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 35434.1 total, 923.6 interval
+Cumulative writes: 2075 writes, 0 keys, 2075 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2074 writes, 0 syncs, 2074.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 2 writes, 0 keys, 2 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 1 writes, 0 syncs, 1.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-21:05:43.283000 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-21:05:43.283006 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 36614.8 total, 1180.7 interval
+Cumulative writes: 2111 writes, 0 keys, 2111 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2111 writes, 0 syncs, 2111.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 36 writes, 0 keys, 36 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 37 writes, 0 syncs, 37.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-21:21:58.618047 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-21:21:58.618051 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 37590.2 total, 975.3 interval
+Cumulative writes: 2120 writes, 0 keys, 2120 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2119 writes, 0 syncs, 2119.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 9 writes, 0 keys, 9 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-21:37:22.245460 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-21:37:22.245464 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 38513.8 total, 923.6 interval
+Cumulative writes: 2121 writes, 0 keys, 2121 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2121 writes, 0 syncs, 2121.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 1 writes, 0 keys, 1 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 2 writes, 0 syncs, 2.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-21:54:13.858125 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-21:54:13.858130 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 39525.4 total, 1011.6 interval
+Cumulative writes: 2136 writes, 0 keys, 2136 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2135 writes, 0 syncs, 2135.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 15 writes, 0 keys, 15 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 14 writes, 0 syncs, 14.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-22:12:01.563684 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-22:12:01.563714 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 40593.1 total, 1067.7 interval
+Cumulative writes: 2155 writes, 0 keys, 2155 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2155 writes, 0 syncs, 2155.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 19 writes, 0 keys, 19 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 20 writes, 0 syncs, 20.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 40593.1 total, 7715.3 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 51 last_copies: 0 last_secs: 3.2e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/07-22:27:09.190895 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-22:27:09.190899 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 41500.7 total, 907.6 interval
+Cumulative writes: 2157 writes, 0 keys, 2157 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2157 writes, 0 syncs, 2157.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 2 writes, 0 keys, 2 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 2 writes, 0 syncs, 2.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-22:44:32.228484 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-22:44:32.228488 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 42543.8 total, 1043.0 interval
+Cumulative writes: 2172 writes, 0 keys, 2172 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2171 writes, 0 syncs, 2171.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 15 writes, 0 keys, 15 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 14 writes, 0 syncs, 14.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-23:00:48.099136 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-23:00:48.099141 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 43519.6 total, 975.9 interval
+Cumulative writes: 2179 writes, 0 keys, 2179 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2179 writes, 0 syncs, 2179.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 7 writes, 0 keys, 7 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-23:17:03.440877 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-23:17:03.440883 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 44495.0 total, 975.3 interval
+Cumulative writes: 2187 writes, 0 keys, 2187 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2187 writes, 0 syncs, 2187.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-23:33:18.777367 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-23:33:18.777371 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 45470.3 total, 975.3 interval
+Cumulative writes: 2195 writes, 0 keys, 2195 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2195 writes, 0 syncs, 2195.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/07-23:48:42.704928 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/07-23:48:42.704934 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 46394.3 total, 923.9 interval
+Cumulative writes: 2197 writes, 0 keys, 2197 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2197 writes, 0 syncs, 2197.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 2 writes, 0 keys, 2 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 2 writes, 0 syncs, 2.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-00:05:49.996390 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-00:05:49.996397 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 47421.5 total, 1027.3 interval
+Cumulative writes: 2213 writes, 0 keys, 2213 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2213 writes, 0 syncs, 2213.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 16 writes, 0 keys, 16 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 16 writes, 0 syncs, 16.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-00:22:05.302169 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-00:22:05.302187 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 48396.9 total, 975.3 interval
+Cumulative writes: 2220 writes, 0 keys, 2220 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2219 writes, 0 syncs, 2219.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 7 writes, 0 keys, 7 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 6 writes, 0 syncs, 6.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 48396.9 total, 7803.7 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 59 last_copies: 0 last_secs: 1.7e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/08-00:32:05.302852 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-00:32:05.302878 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 48996.9 total, 600.0 interval
+Cumulative writes: 2237 writes, 0 keys, 2237 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2237 writes, 0 syncs, 2237.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 17 writes, 0 keys, 17 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 18 writes, 0 syncs, 18.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-00:42:05.303117 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-00:42:05.303123 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 49596.9 total, 600.0 interval
+Cumulative writes: 2317 writes, 0 keys, 2317 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2317 writes, 0 syncs, 2317.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-00:52:05.303573 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-00:52:05.303580 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 50196.9 total, 600.0 interval
+Cumulative writes: 2397 writes, 0 keys, 2397 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2397 writes, 0 syncs, 2397.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-01:02:05.304622 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-01:02:05.304629 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 50796.9 total, 600.0 interval
+Cumulative writes: 2477 writes, 0 keys, 2477 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2477 writes, 0 syncs, 2477.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-01:12:05.304915 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-01:12:05.304920 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 51396.9 total, 600.0 interval
+Cumulative writes: 2557 writes, 0 keys, 2557 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2557 writes, 0 syncs, 2557.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-01:22:05.305032 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-01:22:05.305035 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 51996.9 total, 600.0 interval
+Cumulative writes: 2637 writes, 0 keys, 2637 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2637 writes, 0 syncs, 2637.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-01:32:05.305755 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-01:32:05.305762 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 52596.9 total, 600.0 interval
+Cumulative writes: 2717 writes, 0 keys, 2717 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2717 writes, 0 syncs, 2717.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-01:42:05.306004 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-01:42:05.306013 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 53196.9 total, 600.0 interval
+Cumulative writes: 2797 writes, 0 keys, 2797 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2797 writes, 0 syncs, 2797.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 53196.9 total, 4800.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 67 last_copies: 0 last_secs: 1.3e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/08-01:52:05.306419 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-01:52:05.306425 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 53796.9 total, 600.0 interval
+Cumulative writes: 2877 writes, 0 keys, 2877 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2877 writes, 0 syncs, 2877.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-02:02:05.306957 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-02:02:05.306961 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 54396.9 total, 600.0 interval
+Cumulative writes: 2957 writes, 0 keys, 2957 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 2957 writes, 0 syncs, 2957.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-02:12:05.307684 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-02:12:05.307690 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 54996.9 total, 600.0 interval
+Cumulative writes: 3037 writes, 0 keys, 3037 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3037 writes, 0 syncs, 3037.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-02:22:05.308176 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-02:22:05.308185 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 55596.9 total, 600.0 interval
+Cumulative writes: 3117 writes, 0 keys, 3117 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3117 writes, 0 syncs, 3117.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-02:32:05.308510 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-02:32:05.308516 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 56196.9 total, 600.0 interval
+Cumulative writes: 3197 writes, 0 keys, 3197 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3197 writes, 0 syncs, 3197.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-02:42:05.308922 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-02:42:05.308929 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 56796.9 total, 600.0 interval
+Cumulative writes: 3277 writes, 0 keys, 3277 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3277 writes, 0 syncs, 3277.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-02:52:05.309362 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-02:52:05.309366 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 57396.9 total, 600.0 interval
+Cumulative writes: 3357 writes, 0 keys, 3357 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3357 writes, 0 syncs, 3357.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-03:21:35.267267 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-03:21:35.267283 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 59166.8 total, 1770.0 interval
+Cumulative writes: 3407 writes, 0 keys, 3407 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3407 writes, 0 syncs, 3407.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 50 writes, 0 keys, 50 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 50 writes, 0 syncs, 50.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 59166.8 total, 5970.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 75 last_copies: 0 last_secs: 2.4e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/08-03:32:03.426084 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-03:32:03.426089 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 59795.0 total, 628.2 interval
+Cumulative writes: 3422 writes, 0 keys, 3422 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3421 writes, 0 syncs, 3421.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 15 writes, 0 keys, 15 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 14 writes, 0 syncs, 14.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-03:49:11.395718 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-03:49:11.395723 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 60822.9 total, 1028.0 interval
+Cumulative writes: 3440 writes, 0 keys, 3440 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3439 writes, 0 syncs, 3439.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 18 writes, 0 keys, 18 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 18 writes, 0 syncs, 18.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-04:06:45.390786 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-04:06:45.390791 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 61876.9 total, 1054.0 interval
+Cumulative writes: 3457 writes, 0 keys, 3457 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3457 writes, 0 syncs, 3457.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 17 writes, 0 keys, 17 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 18 writes, 0 syncs, 18.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-04:24:12.383460 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-04:24:12.383467 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 62923.9 total, 1047.0 interval
+Cumulative writes: 3475 writes, 0 keys, 3475 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3475 writes, 0 syncs, 3475.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 18 writes, 0 keys, 18 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 18 writes, 0 syncs, 18.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-04:34:12.385939 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-04:34:12.387526 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 63523.9 total, 600.0 interval
+Cumulative writes: 3503 writes, 0 keys, 3503 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3503 writes, 0 syncs, 3503.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 28 writes, 0 keys, 28 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 28 writes, 0 syncs, 28.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-04:50:39.739825 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-04:50:39.739832 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 64511.3 total, 987.4 interval
+Cumulative writes: 3511 writes, 0 keys, 3511 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3511 writes, 0 syncs, 3511.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-05:06:55.054512 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-05:06:55.054516 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 65486.6 total, 975.3 interval
+Cumulative writes: 3519 writes, 0 keys, 3519 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3519 writes, 0 syncs, 3519.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-05:23:10.974321 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-05:23:10.974341 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 66462.5 total, 975.9 interval
+Cumulative writes: 3528 writes, 0 keys, 3528 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3527 writes, 0 syncs, 3527.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 9 writes, 0 keys, 9 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 66462.5 total, 7295.7 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 83 last_copies: 0 last_secs: 1.9e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/08-05:33:10.976718 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-05:33:10.978467 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 67062.5 total, 600.0 interval
+Cumulative writes: 3607 writes, 0 keys, 3607 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3607 writes, 0 syncs, 3607.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 79 writes, 0 keys, 79 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-05:43:10.978980 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-05:43:10.979992 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 67662.5 total, 600.0 interval
+Cumulative writes: 3687 writes, 0 keys, 3687 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3687 writes, 0 syncs, 3687.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-05:53:10.981658 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-05:53:10.983056 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 68262.5 total, 600.0 interval
+Cumulative writes: 3767 writes, 0 keys, 3767 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3767 writes, 0 syncs, 3767.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-06:03:10.983321 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-06:03:10.984195 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 68862.5 total, 600.0 interval
+Cumulative writes: 3847 writes, 0 keys, 3847 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3847 writes, 0 syncs, 3847.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-06:13:10.984443 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-06:13:10.984474 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 69462.5 total, 600.0 interval
+Cumulative writes: 3867 writes, 0 keys, 3867 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3867 writes, 0 syncs, 3867.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 20 writes, 0 keys, 20 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 20 writes, 0 syncs, 20.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-06:23:10.984817 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-06:23:10.984827 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 70062.5 total, 600.0 interval
+Cumulative writes: 3947 writes, 0 keys, 3947 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 3947 writes, 0 syncs, 3947.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-06:33:10.985239 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-06:33:10.985254 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 70662.5 total, 600.0 interval
+Cumulative writes: 4027 writes, 0 keys, 4027 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4027 writes, 0 syncs, 4027.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-06:43:10.985718 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-06:43:10.985733 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 71262.5 total, 600.0 interval
+Cumulative writes: 4107 writes, 0 keys, 4107 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4107 writes, 0 syncs, 4107.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 71262.5 total, 4800.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 91 last_copies: 0 last_secs: 2.3e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/08-06:53:10.986598 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-06:53:10.986612 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 71862.5 total, 600.0 interval
+Cumulative writes: 4187 writes, 0 keys, 4187 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4187 writes, 0 syncs, 4187.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-07:12:34.978667 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-07:12:34.978676 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 73026.5 total, 1164.0 interval
+Cumulative writes: 4219 writes, 0 keys, 4219 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4219 writes, 0 syncs, 4219.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 32 writes, 0 keys, 32 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 32 writes, 0 syncs, 32.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-07:28:50.984729 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-07:28:50.984732 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 74002.5 total, 976.0 interval
+Cumulative writes: 4228 writes, 0 keys, 4228 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4227 writes, 0 syncs, 4227.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 9 writes, 0 keys, 9 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-07:39:16.185179 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-07:39:16.185183 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 74627.7 total, 625.2 interval
+Cumulative writes: 4235 writes, 0 keys, 4235 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4235 writes, 0 syncs, 4235.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 7 writes, 0 keys, 7 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-07:49:16.187014 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-07:49:16.187836 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 75227.7 total, 600.0 interval
+Cumulative writes: 4315 writes, 0 keys, 4315 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4315 writes, 0 syncs, 4315.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-07:59:16.189001 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-07:59:16.190217 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 75827.7 total, 600.0 interval
+Cumulative writes: 4395 writes, 0 keys, 4395 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4395 writes, 0 syncs, 4395.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-08:09:16.191989 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-08:09:16.193441 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 76427.7 total, 600.0 interval
+Cumulative writes: 4475 writes, 0 keys, 4475 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4475 writes, 0 syncs, 4475.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-08:19:16.195176 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-08:19:16.196901 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 77027.7 total, 600.0 interval
+Cumulative writes: 4555 writes, 0 keys, 4555 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4555 writes, 0 syncs, 4555.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 77027.7 total, 5765.2 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 99 last_copies: 0 last_secs: 5.8e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/08-08:37:37.608670 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-08:37:37.608675 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 78129.2 total, 1101.4 interval
+Cumulative writes: 4578 writes, 0 keys, 4578 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4577 writes, 0 syncs, 4577.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 23 writes, 0 keys, 23 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 22 writes, 0 syncs, 22.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-08:47:37.609270 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-08:47:37.609279 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 78729.2 total, 600.0 interval
+Cumulative writes: 4591 writes, 0 keys, 4591 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4591 writes, 0 syncs, 4591.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 13 writes, 0 keys, 13 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 14 writes, 0 syncs, 14.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-09:03:12.382584 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-09:03:12.382590 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 79663.9 total, 934.8 interval
+Cumulative writes: 4595 writes, 0 keys, 4595 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4594 writes, 0 syncs, 4594.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 4 writes, 0 keys, 4 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 3 writes, 0 syncs, 3.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-09:19:27.352343 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-09:19:27.352346 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 80638.9 total, 975.0 interval
+Cumulative writes: 4601 writes, 0 keys, 4601 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4601 writes, 0 syncs, 4601.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 6 writes, 0 keys, 6 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 7 writes, 0 syncs, 7.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-09:35:42.592710 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-09:35:42.592715 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 81614.1 total, 975.2 interval
+Cumulative writes: 4610 writes, 0 keys, 4610 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4609 writes, 0 syncs, 4609.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 9 writes, 0 keys, 9 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-09:51:57.926486 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-09:51:57.926492 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 82589.5 total, 975.3 interval
+Cumulative writes: 4617 writes, 0 keys, 4617 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4617 writes, 0 syncs, 4617.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 7 writes, 0 keys, 7 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-10:08:13.776252 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-10:08:13.776256 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 83565.3 total, 975.8 interval
+Cumulative writes: 4625 writes, 0 keys, 4625 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4625 writes, 0 syncs, 4625.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-10:18:13.777109 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-10:18:13.777146 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 84165.3 total, 600.0 interval
+Cumulative writes: 4649 writes, 0 keys, 4649 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4649 writes, 0 syncs, 4649.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 24 writes, 0 keys, 24 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 24 writes, 0 syncs, 24.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 84165.3 total, 7137.6 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 107 last_copies: 0 last_secs: 4.7e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/08-10:28:13.779497 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-10:28:13.781184 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 84765.3 total, 600.0 interval
+Cumulative writes: 4687 writes, 0 keys, 4687 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4687 writes, 0 syncs, 4687.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 38 writes, 0 keys, 38 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 38 writes, 0 syncs, 38.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-10:38:13.781594 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-10:38:13.782856 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 85365.3 total, 600.0 interval
+Cumulative writes: 4767 writes, 0 keys, 4767 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4767 writes, 0 syncs, 4767.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-10:48:24.603595 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-10:48:24.603599 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 85976.2 total, 610.8 interval
+Cumulative writes: 4846 writes, 0 keys, 4846 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4845 writes, 0 syncs, 4845.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 79 writes, 0 keys, 79 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 78 writes, 0 syncs, 78.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-11:02:52.741509 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-11:02:52.741515 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 86844.3 total, 868.1 interval
+Cumulative writes: 4869 writes, 0 keys, 4869 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4869 writes, 0 syncs, 4869.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 23 writes, 0 keys, 23 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 24 writes, 0 syncs, 24.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-11:12:52.742784 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-11:12:52.743564 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 87444.3 total, 600.0 interval
+Cumulative writes: 4949 writes, 0 keys, 4949 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 4949 writes, 0 syncs, 4949.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-11:22:52.744258 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-11:22:52.744652 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 88044.3 total, 600.0 interval
+Cumulative writes: 5029 writes, 0 keys, 5029 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 5029 writes, 0 syncs, 5029.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-11:47:35.106378 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-11:47:35.106386 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 89526.7 total, 1482.4 interval
+Cumulative writes: 5103 writes, 0 keys, 5103 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 5103 writes, 0 syncs, 5103.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 74 writes, 0 keys, 74 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 74 writes, 0 syncs, 74.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-12:03:51.030859 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-12:03:51.030877 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 90502.6 total, 975.9 interval
+Cumulative writes: 5111 writes, 0 keys, 5111 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 5111 writes, 0 syncs, 5111.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 8 writes, 0 keys, 8 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 8 writes, 0 syncs, 8.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0    1.42 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      1/0    1.42 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 90502.6 total, 6337.3 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x7f6f18019f00#20 capacity: 8.00 MB usage: 0.67 KB table_size: 256 occupancy: 87 collections: 115 last_copies: 0 last_secs: 2.2e-05 secs_since: 0
+Block cache entry stats(count,size,portion): DataBlock(1,0.50 KB,0.00613928%) Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2023/12/08-12:13:51.031421 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-12:13:51.031427 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 91102.6 total, 600.0 interval
+Cumulative writes: 5181 writes, 0 keys, 5181 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 5181 writes, 0 syncs, 5181.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 70 writes, 0 keys, 70 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 70 writes, 0 syncs, 70.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+2023/12/08-12:23:51.031618 140113141020416 [db/db_impl/db_impl.cc:1110] ------- DUMPING STATS -------
+2023/12/08-12:23:51.031620 140113141020416 [db/db_impl/db_impl.cc:1111] 
+** DB Stats **
+Uptime(secs): 91702.6 total, 600.0 interval
+Cumulative writes: 5261 writes, 0 keys, 5261 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 5261 writes, 0 syncs, 5261.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 80 writes, 0 keys, 80 commit groups, 1.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 80 writes, 0 syncs, 80.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
