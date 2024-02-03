@@ -8,6 +8,10 @@ cube(`application`, {
       sql: `${CUBE}.category_id = ${application_category}.id`,
       relationship: `many_to_one`
     },
+    application_subcategory : {
+      sql: `${CUBE}.subcategory_id = ${application_subcategory}.id`,
+      relationship: `many_to_one`
+    },
   },
   
   dimensions: {
