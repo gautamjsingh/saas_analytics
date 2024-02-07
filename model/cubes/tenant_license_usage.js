@@ -58,7 +58,12 @@ cube(`tenant_license_usage`, {
       activeLicenses: {
         sql: `active_licenses`,
         type: `sum`
-      }
+      },
+      utilization: {
+        sql: `100.0 * ${activeLicenses} / ${totalLicenses}`,
+        type: `number`,
+        format: `percent`,
+      },
   
     },
     pre_aggregations: {// Pre-aggregation definitions go here.

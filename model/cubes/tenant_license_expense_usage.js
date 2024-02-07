@@ -48,6 +48,10 @@ cube(`tenant_license_expense_usage`, {
     byMonth: {
       sql: `month_id`,
       type: `count`
+    },
+    wastage : {
+      sql: `(${amount}/${tenant_license_usage.total_licenses})* (${tenant_license_usage.total_licenses}-${tenant_license_usage.active_licenses})`,
+      type: `sum`
     }
   },
 
