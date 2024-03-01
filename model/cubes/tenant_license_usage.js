@@ -55,6 +55,10 @@ cube(`tenant_license_usage`, {
         sql: `total_licenses`,
         type: `sum`
       },
+      unassignedLicenses: {
+        sql: `unassigned_licenses`,
+        type: `sum`
+      },
       activeLicenses: {
         sql: `active_licenses`,
         type: `sum`
