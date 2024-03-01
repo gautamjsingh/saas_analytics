@@ -1,7 +1,7 @@
 cube(`tenant_license_usage`, {
 
   sql: `
-  SELECT (coalesce(to_char(date, 'YYYY-MM') , '') || cast(application_id as varchar) || cast(tenant_id as varchar)) month_id, DATE_TRUNC('month', date) month_date, application_id, tenant_id, total_licenses, active_licenses
+  SELECT (coalesce(to_char(date, 'YYYY-MM') , '') || cast(application_id as varchar) || cast(tenant_id as varchar)) month_id, DATE_TRUNC('month', date) month_date, application_id, tenant_id, total_licenses, active_licenses, unassigned_licenses
    FROM public.tenant_application_license 
 `,
     data_source: `default`,
