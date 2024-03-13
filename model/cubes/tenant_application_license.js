@@ -71,9 +71,24 @@ cube(`tenant_application_license`, {
       sql: `is_fetched_via_api`,
       type: `string`
     },
-    
     annual_cost_per_license: {
       sql: `annual_cost_per_license`,
+      type: `number`
+    },
+    total_licenses: {
+      sql: `total_licenses`,
+      type: `number`
+    },
+    active_licenses: {
+      sql: `active_licenses`,
+      type: `number`
+    },
+    inactive_licenses: {
+      sql: `inactive_licenses`,
+      type: `number`
+    },
+    unassigned_licenses: {
+      sql: `unassigned_licenses`,
       type: `number`
     },
     
@@ -105,6 +120,31 @@ cube(`tenant_application_license`, {
     total_amount: {
       sql: `annual_cost_per_license`,
       type: `sum`,
+    },
+    total_licenses_sum: {
+      sql: `total_licenses`,
+      type: `sum`,
+    },
+    total_unassigned_licenses : {
+      sql: `unassigned_licenses`,
+      type: `sum`,
+    },
+    total_active_licenses : {
+      sql: `active_licenses`,
+      type: `sum`,
+    },
+    total_licenses_count : {
+      sql: `total_licenses`,
+      type: `sum`,
+    },
+    unmapped_license_value: {
+      sql: `${unassigned_licenses} * ${annual_cost_per_license}`,
+      type: `sum`,
+    },
+    utilization: {
+      sql: `${total_unassigned_licenses} * 100/ ${total_licenses_count}`,
+      type: `number`,
+      format: `percent`,
     },
   },
   
