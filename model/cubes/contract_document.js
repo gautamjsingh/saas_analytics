@@ -1,10 +1,13 @@
-cube(`role_permissions`, {
-  sql_table: `public.role_permissions`,
+cube(`contract_document`, {
+  sql_table: `public.contract_document`,
   
   data_source: `default`,
   
   joins: {
-    
+    tenant_contract: {
+      sql: `${CUBE}.tenant_contract_id = ${tenant_contract}.id`,
+      relationship: `many_to_one`
+    }
   },
   
   dimensions: {
@@ -14,19 +17,29 @@ cube(`role_permissions`, {
       primary_key: true
     },
     
-    permission_value: {
-      sql: `permission_value`,
+    name: {
+      sql: `name`,
       type: `string`
     },
     
-    permission_id: {
-      sql: `permission_id`,
+    link: {
+      sql: `link`,
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    tenant_contract_id: {
+      sql: `tenant_contract_id`,
       type: `string`
+    },
+    
+    uploaded_by: {
+      sql: `uploaded_by`,
+      type: `string`
+    },
+    
+    uploaded_on: {
+      sql: `uploaded_on`,
+      type: `time`
     }
   },
   

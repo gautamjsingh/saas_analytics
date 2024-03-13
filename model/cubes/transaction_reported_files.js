@@ -1,5 +1,5 @@
-cube(`role_permissions`, {
-  sql_table: `public.role_permissions`,
+cube(`transaction_reported_files`, {
+  sql_table: `public.transaction_reported_files`,
   
   data_source: `default`,
   
@@ -14,19 +14,29 @@ cube(`role_permissions`, {
       primary_key: true
     },
     
-    permission_value: {
-      sql: `permission_value`,
+    file_name: {
+      sql: `file_name`,
       type: `string`
     },
     
-    permission_id: {
-      sql: `permission_id`,
+    source_file_link: {
+      sql: `source_file_link`,
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    reported_by: {
+      sql: `reported_by`,
       type: `string`
+    },
+    
+    file_attribute_match: {
+      sql: `file_attribute_match`,
+      type: `string`
+    },
+    
+    reported_on: {
+      sql: `reported_on`,
+      type: `time`
     }
   },
   

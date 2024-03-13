@@ -1,11 +1,11 @@
-cube(`tenant_user_roles`, {
-  sql_table: `public.tenant_user_roles`,
+cube(`user_identified_by`, {
+  sql_table: `public.user_identified_by`,
   
   data_source: `default`,
   
   joins: {
-    tenant: {
-      sql: `${CUBE}.tenant_id = ${tenant}.id`,
+    tenant_application_user: {
+      sql: `${CUBE}.tenant_application_user_id = ${tenant_application_user}.id`,
       relationship: `many_to_one`
     }
   },
@@ -17,19 +17,24 @@ cube(`tenant_user_roles`, {
       primary_key: true
     },
     
-    name: {
-      sql: `name`,
+    app_id: {
+      sql: `app_id`,
       type: `string`
     },
     
-    description: {
-      sql: `description`,
+    user_identification_source_type_id: {
+      sql: `user_identification_source_type_id`,
       type: `string`
     },
     
-    tenant_id: {
-      sql: `tenant_id`,
+    tenant_application_user_id: {
+      sql: `tenant_application_user_id`,
       type: `string`
+    },
+    
+    identified_on: {
+      sql: `identified_on`,
+      type: `time`
     }
   },
   

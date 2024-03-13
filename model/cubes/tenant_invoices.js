@@ -1,11 +1,11 @@
-cube(`tenant`, {
-  sql_table: `public.tenant`,
+cube(`tenant_invoices`, {
+  sql_table: `public.tenant_invoices`,
   
   data_source: `default`,
   
   joins: {
-    country: {
-      sql: `${CUBE}.country_id = ${country}.id`,
+    tenant: {
+      sql: `${CUBE}.tenant_id = ${tenant}.id`,
       relationship: `many_to_one`
     }
   },
@@ -17,8 +17,13 @@ cube(`tenant`, {
       primary_key: true
     },
     
-    description: {
-      sql: `description`,
+    link: {
+      sql: `link`,
+      type: `string`
+    },
+    
+    tenant_id: {
+      sql: `tenant_id`,
       type: `string`
     },
     
@@ -27,38 +32,33 @@ cube(`tenant`, {
       type: `string`
     },
     
-    tenant_name: {
-      sql: `tenant_name`,
+    payment_mode_id: {
+      sql: `payment_mode_id`,
       type: `string`
     },
     
-    tenant_code: {
-      sql: `tenant_code`,
+    transaction_date: {
+      sql: `transaction_date`,
       type: `string`
     },
     
-    country_id: {
-      sql: `country_id`,
+    transaction_id: {
+      sql: `transaction_id`,
       type: `string`
     },
     
-    tax_id: {
-      sql: `tax_id`,
-      type: `string`
+    amount: {
+      sql: `amount`,
+      type: `number`
     },
     
-    billing_address: {
-      sql: `billing_address`,
-      type: `string`
+    billed_month: {
+      sql: `billed_month`,
+      type: `time`
     },
     
-    tax_id_type_id: {
-      sql: `tax_id_type_id`,
-      type: `string`
-    },
-    
-    updated_at: {
-      sql: `updated_at`,
+    generated_on: {
+      sql: `generated_on`,
       type: `time`
     }
   },
@@ -66,6 +66,10 @@ cube(`tenant`, {
   measures: {
     count: {
       type: `count`
+    },
+    total_invoice_amount : {
+      sql: `amount`,
+      type: `sum`,
     }
   },
   

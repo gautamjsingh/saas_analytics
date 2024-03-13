@@ -1,5 +1,5 @@
-cube(`tax_id_type`, {
-  sql_table: `public.tax_id_type`,
+cube(`tag`, {
+  sql_table: `public.tag`,
   
   data_source: `default`,
   

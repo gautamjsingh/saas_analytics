@@ -1,11 +1,21 @@
-cube(`tenant_user`, {
-  sql_table: `public.tenant_user`,
+cube(`tenant_chargeback_strategy_configuration`, {
+  sql_table: `public.tenant_chargeback_strategy_configuration`,
   
   data_source: `default`,
   
   joins: {
+    tenant_chargeback_structure: {
+      sql: `${CUBE}.tenant_chargeback_structure_id = ${tenant_chargeback_structure}.id`,
+      relationship: `many_to_one`
+    },
+    
     tenant: {
       sql: `${CUBE}.tenant_id = ${tenant}.id`,
+      relationship: `many_to_one`
+    },
+    
+    application: {
+      sql: `${CUBE}.application_id = ${application}.id`,
       relationship: `many_to_one`
     }
   },
@@ -17,8 +27,8 @@ cube(`tenant_user`, {
       primary_key: true
     },
     
-    middle_name: {
-      sql: `middle_name`,
+    tenant_chargeback_structure_id: {
+      sql: `tenant_chargeback_structure_id`,
       type: `string`
     },
     
@@ -27,48 +37,28 @@ cube(`tenant_user`, {
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    application_id: {
+      sql: `application_id`,
       type: `string`
     },
     
-    first_name: {
-      sql: `first_name`,
+    chargeback_strategy_id: {
+      sql: `chargeback_strategy_id`,
       type: `string`
     },
     
-    email: {
-      sql: `email`,
+    configuration: {
+      sql: `configuration`,
       type: `string`
     },
     
-    is_active: {
-      sql: `is_active`,
+    updated_by: {
+      sql: `updated_by`,
       type: `string`
     },
     
-    last_name: {
-      sql: `last_name`,
-      type: `string`
-    },
-    
-    updated_at: {
-      sql: `updated_at`,
-      type: `time`
-    },
-    
-    deactivated_on: {
-      sql: `deactivated_on`,
-      type: `time`
-    },
-    
-    last_accessed_on: {
-      sql: `last_accessed_on`,
-      type: `time`
-    },
-    
-    activated_on: {
-      sql: `activated_on`,
+    updated_on: {
+      sql: `updated_on`,
       type: `time`
     }
   },

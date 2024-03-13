@@ -1,11 +1,16 @@
-cube(`tenant_user_roles`, {
-  sql_table: `public.tenant_user_roles`,
+cube(`tenant_chargeback_structure_definition`, {
+  sql_table: `public.tenant_chargeback_structure_definition`,
   
   data_source: `default`,
   
   joins: {
     tenant: {
       sql: `${CUBE}.tenant_id = ${tenant}.id`,
+      relationship: `many_to_one`
+    },
+    
+    tenant_chargeback_structure: {
+      sql: `${CUBE}.tenant_chargeback_structure_id = ${tenant_chargeback_structure}.id`,
       relationship: `many_to_one`
     }
   },
@@ -17,8 +22,13 @@ cube(`tenant_user_roles`, {
       primary_key: true
     },
     
-    name: {
-      sql: `name`,
+    code: {
+      sql: `code`,
+      type: `string`
+    },
+    
+    cost_centre_id: {
+      sql: `cost_centre_id`,
       type: `string`
     },
     
@@ -30,6 +40,21 @@ cube(`tenant_user_roles`, {
     tenant_id: {
       sql: `tenant_id`,
       type: `string`
+    },
+    
+    tenant_chargeback_structure_id: {
+      sql: `tenant_chargeback_structure_id`,
+      type: `string`
+    },
+    
+    parent_id: {
+      sql: `parent_id`,
+      type: `string`
+    },
+    
+    updated_on: {
+      sql: `updated_on`,
+      type: `time`
     }
   },
   

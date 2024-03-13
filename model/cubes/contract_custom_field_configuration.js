@@ -1,10 +1,13 @@
-cube(`role_permissions`, {
-  sql_table: `public.role_permissions`,
+cube(`contract_custom_field_configuration`, {
+  sql_table: `public.contract_custom_field_configuration`,
   
   data_source: `default`,
   
   joins: {
-    
+    tenant: {
+      sql: `${CUBE}.tenant_id = ${tenant}.id`,
+      relationship: `many_to_one`
+    }
   },
   
   dimensions: {
@@ -14,18 +17,23 @@ cube(`role_permissions`, {
       primary_key: true
     },
     
-    permission_value: {
-      sql: `permission_value`,
+    config_data: {
+      sql: `config_data`,
       type: `string`
     },
     
-    permission_id: {
-      sql: `permission_id`,
+    custom_field_configuration_type: {
+      sql: `custom_field_configuration_type`,
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    link: {
+      sql: `link`,
+      type: `string`
+    },
+    
+    tenant_id: {
+      sql: `tenant_id`,
       type: `string`
     }
   },

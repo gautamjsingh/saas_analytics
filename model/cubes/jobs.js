@@ -14,8 +14,8 @@ cube(`jobs`, {
       primary_key: true
     },
     
-    type: {
-      sql: `type`,
+    error: {
+      sql: `error`,
       type: `string`
     },
     
@@ -24,8 +24,23 @@ cube(`jobs`, {
       type: `string`
     },
     
+    name: {
+      sql: `name`,
+      type: `string`
+    },
+    
     added_on: {
       sql: `added_on`,
+      type: `time`
+    },
+    
+    completed_on: {
+      sql: `completed_on`,
+      type: `time`
+    },
+    
+    started_on: {
+      sql: `started_on`,
       type: `time`
     }
   },

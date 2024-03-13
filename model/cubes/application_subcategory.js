@@ -4,7 +4,7 @@ cube(`application_subcategory`, {
   data_source: `default`,
   
   joins: {
-    application_category : {
+    application_category: {
       sql: `${CUBE}.category_id = ${application_category}.id`,
       relationship: `many_to_one`
     },
@@ -17,13 +17,13 @@ cube(`application_subcategory`, {
       primary_key: true
     },
     
-    category_id: {
-      sql: `category_id`,
+    name: {
+      sql: `name`,
       type: `string`
     },
     
-    name: {
-      sql: `name`,
+    category_id: {
+      sql: `category_id`,
       type: `string`
     }
   },
@@ -31,7 +31,7 @@ cube(`application_subcategory`, {
   measures: {
     count: {
       type: `count`
-    },
+    }
   },
   
   pre_aggregations: {

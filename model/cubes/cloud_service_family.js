@@ -1,5 +1,5 @@
-cube(`role_permissions`, {
-  sql_table: `public.role_permissions`,
+cube(`cloud_service_family`, {
+  sql_table: `public.cloud_service_family`,
   
   data_source: `default`,
   
@@ -14,18 +14,13 @@ cube(`role_permissions`, {
       primary_key: true
     },
     
-    permission_value: {
-      sql: `permission_value`,
+    description: {
+      sql: `description`,
       type: `string`
     },
     
-    permission_id: {
-      sql: `permission_id`,
-      type: `string`
-    },
-    
-    role_id: {
-      sql: `role_id`,
+    name: {
+      sql: `name`,
       type: `string`
     }
   },

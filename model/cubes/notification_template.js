@@ -1,5 +1,5 @@
-cube(`payment_mode`, {
-  sql_table: `public.payment_mode`,
+cube(`notification_template`, {
+  sql_table: `public.notification_template`,
   
   data_source: `default`,
   
@@ -19,8 +19,13 @@ cube(`payment_mode`, {
       type: `string`
     },
     
-    code: {
-      sql: `code`,
+    notification_type_id: {
+      sql: `notification_type_id`,
+      type: `string`
+    },
+    
+    content: {
+      sql: `content`,
       type: `string`
     }
   },

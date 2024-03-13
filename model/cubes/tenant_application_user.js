@@ -1,5 +1,5 @@
-cube(`tenant_user`, {
-  sql_table: `public.tenant_user`,
+cube(`tenant_application_user`, {
+  sql_table: `public.tenant_application_user`,
   
   data_source: `default`,
   
@@ -17,23 +17,8 @@ cube(`tenant_user`, {
       primary_key: true
     },
     
-    middle_name: {
-      sql: `middle_name`,
-      type: `string`
-    },
-    
-    tenant_id: {
-      sql: `tenant_id`,
-      type: `string`
-    },
-    
-    role_id: {
-      sql: `role_id`,
-      type: `string`
-    },
-    
-    first_name: {
-      sql: `first_name`,
+    user_classfication_type_id: {
+      sql: `user_classfication_type_id`,
       type: `string`
     },
     
@@ -42,13 +27,48 @@ cube(`tenant_user`, {
       type: `string`
     },
     
-    is_active: {
-      sql: `is_active`,
+    user_status_id: {
+      sql: `user_status_id`,
       type: `string`
     },
     
     last_name: {
       sql: `last_name`,
+      type: `string`
+    },
+    
+    invitation_link: {
+      sql: `invitation_link`,
+      type: `string`
+    },
+    
+    middle_name: {
+      sql: `middle_name`,
+      type: `string`
+    },
+    
+    invitation_status: {
+      sql: `invitation_status`,
+      type: `string`
+    },
+    
+    first_name: {
+      sql: `first_name`,
+      type: `string`
+    },
+    
+    cost_centre_id: {
+      sql: `cost_centre_id`,
+      type: `string`
+    },
+    
+    tenant_id: {
+      sql: `tenant_id`,
+      type: `string`
+    },
+    
+    is_active: {
+      sql: `is_active`,
       type: `string`
     },
     
@@ -62,8 +82,8 @@ cube(`tenant_user`, {
       type: `time`
     },
     
-    last_accessed_on: {
-      sql: `last_accessed_on`,
+    last_recorded_usage: {
+      sql: `last_recorded_usage`,
       type: `time`
     },
     

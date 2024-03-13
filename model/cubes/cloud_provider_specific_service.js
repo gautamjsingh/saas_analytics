@@ -1,5 +1,5 @@
-cube(`currency`, {
-  sql_table: `public.currency`,
+cube(`cloud_provider_specific_service`, {
+  sql_table: `public.cloud_provider_specific_service`,
   
   data_source: `default`,
   
@@ -14,8 +14,23 @@ cube(`currency`, {
       primary_key: true
     },
     
-    code: {
-      sql: `code`,
+    description: {
+      sql: `description`,
+      type: `string`
+    },
+    
+    identifier_strings: {
+      sql: `identifier_strings`,
+      type: `string`
+    },
+    
+    cloud_provider_id: {
+      sql: `cloud_provider_id`,
+      type: `string`
+    },
+    
+    name: {
+      sql: `name`,
       type: `string`
     }
   },

@@ -1,10 +1,13 @@
-cube(`role_permissions`, {
-  sql_table: `public.role_permissions`,
+cube(`benchmark_license_cost`, {
+  sql_table: `public.benchmark_license_cost`,
   
   data_source: `default`,
   
   joins: {
-    
+    application: {
+      sql: `${CUBE}.application_id = ${application}.id`,
+      relationship: `many_to_one`
+    }
   },
   
   dimensions: {
@@ -14,19 +17,24 @@ cube(`role_permissions`, {
       primary_key: true
     },
     
-    permission_value: {
-      sql: `permission_value`,
+    application_id: {
+      sql: `application_id`,
       type: `string`
     },
     
-    permission_id: {
-      sql: `permission_id`,
+    currency_id: {
+      sql: `currency_id`,
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    benchmark_cost: {
+      sql: `benchmark_cost`,
       type: `string`
+    },
+    
+    last_updated_on: {
+      sql: `last_updated_on`,
+      type: `time`
     }
   },
   

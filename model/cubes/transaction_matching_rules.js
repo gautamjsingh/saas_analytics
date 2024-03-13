@@ -1,11 +1,11 @@
-cube(`tenant`, {
-  sql_table: `public.tenant`,
+cube(`transaction_matching_rules`, {
+  sql_table: `public.transaction_matching_rules`,
   
   data_source: `default`,
   
   joins: {
-    country: {
-      sql: `${CUBE}.country_id = ${country}.id`,
+    tenant: {
+      sql: `${CUBE}.tenant_id = ${tenant}.id`,
       relationship: `many_to_one`
     }
   },
@@ -17,48 +17,33 @@ cube(`tenant`, {
       primary_key: true
     },
     
-    description: {
-      sql: `description`,
+    added_by: {
+      sql: `added_by`,
       type: `string`
     },
     
-    currency_id: {
-      sql: `currency_id`,
+    last_updated_by: {
+      sql: `last_updated_by`,
       type: `string`
     },
     
-    tenant_name: {
-      sql: `tenant_name`,
+    tenant_id: {
+      sql: `tenant_id`,
       type: `string`
     },
     
-    tenant_code: {
-      sql: `tenant_code`,
+    rule_definition: {
+      sql: `rule_definition`,
       type: `string`
     },
     
-    country_id: {
-      sql: `country_id`,
+    matching_rule_type_id: {
+      sql: `matching_rule_type_id`,
       type: `string`
     },
     
-    tax_id: {
-      sql: `tax_id`,
-      type: `string`
-    },
-    
-    billing_address: {
-      sql: `billing_address`,
-      type: `string`
-    },
-    
-    tax_id_type_id: {
-      sql: `tax_id_type_id`,
-      type: `string`
-    },
-    
-    updated_at: {
-      sql: `updated_at`,
+    last_updated_on: {
+      sql: `last_updated_on`,
       type: `time`
     }
   },

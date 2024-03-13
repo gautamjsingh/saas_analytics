@@ -1,13 +1,10 @@
-cube(`tenant_subscription`, {
-  sql_table: `public.tenant_subscription`,
+cube(`notifications`, {
+  sql_table: `public.notifications`,
   
   data_source: `default`,
   
   joins: {
-    tenant: {
-      sql: `${CUBE}.tenant_id = ${tenant}.id`,
-      relationship: `many_to_one`
-    }
+    
   },
   
   dimensions: {
@@ -17,23 +14,38 @@ cube(`tenant_subscription`, {
       primary_key: true
     },
     
-    tenant_id: {
-      sql: `tenant_id`,
+    status: {
+      sql: `status`,
       type: `string`
     },
     
-    updated_at: {
-      sql: `updated_at`,
+    notification_type_id: {
+      sql: `notification_type_id`,
+      type: `string`
+    },
+    
+    template_id: {
+      sql: `template_id`,
+      type: `string`
+    },
+    
+    sent_to: {
+      sql: `sent_to`,
+      type: `string`
+    },
+    
+    values: {
+      sql: `values`,
+      type: `string`
+    },
+    
+    sent_at: {
+      sql: `sent_at`,
       type: `time`
     },
     
-    start_date: {
-      sql: `start_date`,
-      type: `time`
-    },
-    
-    end_date: {
-      sql: `end_date`,
+    added_on: {
+      sql: `added_on`,
       type: `time`
     }
   },

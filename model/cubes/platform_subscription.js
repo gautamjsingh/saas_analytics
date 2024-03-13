@@ -1,9 +1,14 @@
-cube(`tenant_user`, {
-  sql_table: `public.tenant_user`,
+cube(`platform_subscription`, {
+  sql_table: `public.platform_subscription`,
   
   data_source: `default`,
   
   joins: {
+    license_definition: {
+      sql: `${CUBE}.license_definition_id = ${license_definition}.id`,
+      relationship: `many_to_one`
+    },
+    
     tenant: {
       sql: `${CUBE}.tenant_id = ${tenant}.id`,
       relationship: `many_to_one`
@@ -17,8 +22,18 @@ cube(`tenant_user`, {
       primary_key: true
     },
     
-    middle_name: {
-      sql: `middle_name`,
+    billing_information: {
+      sql: `billing_information`,
+      type: `string`
+    },
+    
+    platform_subscription_status_id: {
+      sql: `platform_subscription_status_id`,
+      type: `string`
+    },
+    
+    license_definition_id: {
+      sql: `license_definition_id`,
       type: `string`
     },
     
@@ -27,48 +42,23 @@ cube(`tenant_user`, {
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    plan_id: {
+      sql: `plan_id`,
       type: `string`
     },
     
-    first_name: {
-      sql: `first_name`,
-      type: `string`
-    },
-    
-    email: {
-      sql: `email`,
-      type: `string`
-    },
-    
-    is_active: {
-      sql: `is_active`,
-      type: `string`
-    },
-    
-    last_name: {
-      sql: `last_name`,
-      type: `string`
-    },
-    
-    updated_at: {
-      sql: `updated_at`,
+    expiry_date: {
+      sql: `expiry_date`,
       type: `time`
     },
     
-    deactivated_on: {
-      sql: `deactivated_on`,
+    end_on: {
+      sql: `end_on`,
       type: `time`
     },
     
-    last_accessed_on: {
-      sql: `last_accessed_on`,
-      type: `time`
-    },
-    
-    activated_on: {
-      sql: `activated_on`,
+    started_on: {
+      sql: `started_on`,
       type: `time`
     }
   },

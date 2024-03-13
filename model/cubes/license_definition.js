@@ -1,5 +1,5 @@
-cube(`role_permissions`, {
-  sql_table: `public.role_permissions`,
+cube(`license_definition`, {
+  sql_table: `public.license_definition`,
   
   data_source: `default`,
   
@@ -14,19 +14,29 @@ cube(`role_permissions`, {
       primary_key: true
     },
     
-    permission_value: {
-      sql: `permission_value`,
+    rule_content: {
+      sql: `rule_content`,
       type: `string`
     },
     
-    permission_id: {
-      sql: `permission_id`,
+    name: {
+      sql: `name`,
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    description: {
+      sql: `description`,
       type: `string`
+    },
+    
+    rule_type: {
+      sql: `rule_type`,
+      type: `string`
+    },
+    
+    added_on: {
+      sql: `added_on`,
+      type: `time`
     }
   },
   

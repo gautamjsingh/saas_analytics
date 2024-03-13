@@ -4,14 +4,7 @@ cube(`application`, {
   data_source: `default`,
   
   joins: {
-    application_category : {
-      sql: `${CUBE}.category_id = ${application_category}.id`,
-      relationship: `many_to_one`
-    },
-    application_subcategory : {
-      sql: `${CUBE}.subcategory_id = ${application_subcategory}.id`,
-      relationship: `many_to_one`
-    },
+    
   },
   
   dimensions: {
@@ -19,6 +12,11 @@ cube(`application`, {
       sql: `id`,
       type: `string`,
       primary_key: true
+    },
+    
+    modulename: {
+      sql: `modulename`,
+      type: `string`
     },
     
     category_id: {
@@ -31,13 +29,8 @@ cube(`application`, {
       type: `string`
     },
     
-    application_name: {
-      sql: `application_name`,
-      type: `string`
-    },
-    
-    logo: {
-      sql: `logo`,
+    about: {
+      sql: `about`,
       type: `string`
     },
     
@@ -46,8 +39,13 @@ cube(`application`, {
       type: `string`
     },
     
-    about: {
-      sql: `about`,
+    added_by: {
+      sql: `added_by`,
+      type: `string`
+    },
+    
+    logo: {
+      sql: `logo`,
       type: `string`
     },
     
@@ -56,8 +54,8 @@ cube(`application`, {
       type: `string`
     },
     
-    modulename: {
-      sql: `modulename`,
+    application_name: {
+      sql: `application_name`,
       type: `string`
     },
     

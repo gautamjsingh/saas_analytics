@@ -1,10 +1,18 @@
-cube(`role_permissions`, {
-  sql_table: `public.role_permissions`,
+cube(`global_constants`, {
+  sql_table: `public.global_constants`,
   
   data_source: `default`,
   
   joins: {
+    tenant: {
+      sql: `${CUBE}.tenant_id = ${tenant}.id`,
+      relationship: `many_to_one`
+    },
     
+    constant_type: {
+      sql: `${CUBE}.constant_type_id = ${constant_type}.id`,
+      relationship: `many_to_one`
+    }
   },
   
   dimensions: {
@@ -14,18 +22,18 @@ cube(`role_permissions`, {
       primary_key: true
     },
     
-    permission_value: {
-      sql: `permission_value`,
+    name: {
+      sql: `name`,
       type: `string`
     },
     
-    permission_id: {
-      sql: `permission_id`,
+    tenant_id: {
+      sql: `tenant_id`,
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    constant_type_id: {
+      sql: `constant_type_id`,
       type: `string`
     }
   },

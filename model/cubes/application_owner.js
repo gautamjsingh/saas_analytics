@@ -1,11 +1,16 @@
-cube(`tenant`, {
-  sql_table: `public.tenant`,
+cube(`application_owner`, {
+  sql_table: `public.application_owner`,
   
   data_source: `default`,
   
   joins: {
-    country: {
-      sql: `${CUBE}.country_id = ${country}.id`,
+    application: {
+      sql: `${CUBE}.application_id = ${application}.id`,
+      relationship: `many_to_one`
+    },
+    
+    tenant_user: {
+      sql: `${CUBE}.tenant_user_id = ${tenant_user}.id`,
       relationship: `many_to_one`
     }
   },
@@ -17,43 +22,23 @@ cube(`tenant`, {
       primary_key: true
     },
     
-    description: {
-      sql: `description`,
+    is_primary: {
+      sql: `is_primary`,
       type: `string`
     },
     
-    currency_id: {
-      sql: `currency_id`,
+    application_id: {
+      sql: `application_id`,
       type: `string`
     },
     
-    tenant_name: {
-      sql: `tenant_name`,
+    tenant_user_id: {
+      sql: `tenant_user_id`,
       type: `string`
     },
     
-    tenant_code: {
-      sql: `tenant_code`,
-      type: `string`
-    },
-    
-    country_id: {
-      sql: `country_id`,
-      type: `string`
-    },
-    
-    tax_id: {
-      sql: `tax_id`,
-      type: `string`
-    },
-    
-    billing_address: {
-      sql: `billing_address`,
-      type: `string`
-    },
-    
-    tax_id_type_id: {
-      sql: `tax_id_type_id`,
+    added_by: {
+      sql: `added_by`,
       type: `string`
     },
     

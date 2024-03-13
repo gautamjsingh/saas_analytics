@@ -1,11 +1,16 @@
-cube(`tenant`, {
-  sql_table: `public.tenant`,
+cube(`tenant_application_documents`, {
+  sql_table: `public.tenant_application_documents`,
   
   data_source: `default`,
   
   joins: {
-    country: {
-      sql: `${CUBE}.country_id = ${country}.id`,
+    tenant_application_license: {
+      sql: `${CUBE}.tenant_application_license_id = ${tenant_application_license}.id`,
+      relationship: `many_to_one`
+    },
+    
+    tenant: {
+      sql: `${CUBE}.tenant_id = ${tenant}.id`,
       relationship: `many_to_one`
     }
   },
@@ -17,43 +22,33 @@ cube(`tenant`, {
       primary_key: true
     },
     
-    description: {
-      sql: `description`,
+    name: {
+      sql: `name`,
       type: `string`
     },
     
-    currency_id: {
-      sql: `currency_id`,
+    link: {
+      sql: `link`,
       type: `string`
     },
     
-    tenant_name: {
-      sql: `tenant_name`,
+    tenant_application_license_id: {
+      sql: `tenant_application_license_id`,
       type: `string`
     },
     
-    tenant_code: {
-      sql: `tenant_code`,
+    tenant_id: {
+      sql: `tenant_id`,
       type: `string`
     },
     
-    country_id: {
-      sql: `country_id`,
+    tenent_application_document_type_id: {
+      sql: `tenent_application_document_type_id`,
       type: `string`
     },
     
-    tax_id: {
-      sql: `tax_id`,
-      type: `string`
-    },
-    
-    billing_address: {
-      sql: `billing_address`,
-      type: `string`
-    },
-    
-    tax_id_type_id: {
-      sql: `tax_id_type_id`,
+    added_by: {
+      sql: `added_by`,
       type: `string`
     },
     

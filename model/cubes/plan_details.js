@@ -1,5 +1,5 @@
-cube(`role_permissions`, {
-  sql_table: `public.role_permissions`,
+cube(`plan_details`, {
+  sql_table: `public.plan_details`,
   
   data_source: `default`,
   
@@ -14,19 +14,24 @@ cube(`role_permissions`, {
       primary_key: true
     },
     
-    permission_value: {
-      sql: `permission_value`,
+    name: {
+      sql: `name`,
       type: `string`
     },
     
-    permission_id: {
-      sql: `permission_id`,
+    rate_configuration: {
+      sql: `rate_configuration`,
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    description: {
+      sql: `description`,
       type: `string`
+    },
+    
+    added_on: {
+      sql: `added_on`,
+      type: `time`
     }
   },
   

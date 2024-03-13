@@ -1,5 +1,5 @@
-cube(`role_permissions`, {
-  sql_table: `public.role_permissions`,
+cube(`tenant_notification_category`, {
+  sql_table: `public.tenant_notification_category`,
   
   data_source: `default`,
   
@@ -14,19 +14,34 @@ cube(`role_permissions`, {
       primary_key: true
     },
     
-    permission_value: {
-      sql: `permission_value`,
+    notification_type_id: {
+      sql: `notification_type_id`,
       type: `string`
     },
     
-    permission_id: {
-      sql: `permission_id`,
+    notification_category_id: {
+      sql: `notification_category_id`,
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    template_id: {
+      sql: `template_id`,
       type: `string`
+    },
+    
+    rules: {
+      sql: `rules`,
+      type: `string`
+    },
+    
+    values: {
+      sql: `values`,
+      type: `string`
+    },
+    
+    added_on: {
+      sql: `added_on`,
+      type: `time`
     }
   },
   

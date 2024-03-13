@@ -1,16 +1,16 @@
-cube(`tenant_application_connection`, {
-  sql_table: `public.tenant_application_connection`,
+cube(`cloud_service_mapping`, {
+  sql_table: `public.cloud_service_mapping`,
   
   data_source: `default`,
   
   joins: {
-    tenant: {
-      sql: `${CUBE}.tenant_id = ${tenant}.id`,
+    cloud_service_family: {
+      sql: `${CUBE}.cloud_service_family_id = ${cloud_service_family}.id`,
       relationship: `many_to_one`
     },
     
-    application: {
-      sql: `${CUBE}.application_id = ${application}.id`,
+    cloud_provider_specific_service: {
+      sql: `${CUBE}.cloud_provider_specific_service_id = ${cloud_provider_specific_service}.id`,
       relationship: `many_to_one`
     }
   },
@@ -22,29 +22,19 @@ cube(`tenant_application_connection`, {
       primary_key: true
     },
     
-    tenant_id: {
-      sql: `tenant_id`,
+    cloud_service_family_id: {
+      sql: `cloud_service_family_id`,
       type: `string`
     },
     
-    application_id: {
-      sql: `application_id`,
+    cloud_provider_id: {
+      sql: `cloud_provider_id`,
       type: `string`
     },
     
-    connection_data: {
-      sql: `connection_data`,
+    cloud_provider_specific_service_id: {
+      sql: `cloud_provider_specific_service_id`,
       type: `string`
-    },
-    
-    optional_field_data: {
-      sql: `optional_field_data`,
-      type: `string`
-    },
-    
-    updated_at: {
-      sql: `updated_at`,
-      type: `time`
     }
   },
   

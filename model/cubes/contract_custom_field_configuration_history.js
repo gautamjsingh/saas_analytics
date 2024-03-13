@@ -1,5 +1,5 @@
-cube(`role_permissions`, {
-  sql_table: `public.role_permissions`,
+cube(`contract_custom_field_configuration_history`, {
+  sql_table: `public.contract_custom_field_configuration_history`,
   
   data_source: `default`,
   
@@ -14,19 +14,24 @@ cube(`role_permissions`, {
       primary_key: true
     },
     
-    permission_value: {
-      sql: `permission_value`,
+    config_data: {
+      sql: `config_data`,
       type: `string`
     },
     
-    permission_id: {
-      sql: `permission_id`,
+    updated_by: {
+      sql: `updated_by`,
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    configuration_id: {
+      sql: `configuration_id`,
       type: `string`
+    },
+    
+    updated_on: {
+      sql: `updated_on`,
+      type: `time`
     }
   },
   

@@ -1,11 +1,11 @@
-cube(`tenant`, {
-  sql_table: `public.tenant`,
+cube(`tenant_chargeback_structure`, {
+  sql_table: `public.tenant_chargeback_structure`,
   
   data_source: `default`,
   
   joins: {
-    country: {
-      sql: `${CUBE}.country_id = ${country}.id`,
+    tenant: {
+      sql: `${CUBE}.tenant_id = ${tenant}.id`,
       relationship: `many_to_one`
     }
   },
@@ -17,48 +17,33 @@ cube(`tenant`, {
       primary_key: true
     },
     
+    name: {
+      sql: `name`,
+      type: `string`
+    },
+    
+    code: {
+      sql: `code`,
+      type: `string`
+    },
+    
+    tenant_id: {
+      sql: `tenant_id`,
+      type: `string`
+    },
+    
     description: {
       sql: `description`,
       type: `string`
     },
     
-    currency_id: {
-      sql: `currency_id`,
+    added_by: {
+      sql: `added_by`,
       type: `string`
     },
     
-    tenant_name: {
-      sql: `tenant_name`,
-      type: `string`
-    },
-    
-    tenant_code: {
-      sql: `tenant_code`,
-      type: `string`
-    },
-    
-    country_id: {
-      sql: `country_id`,
-      type: `string`
-    },
-    
-    tax_id: {
-      sql: `tax_id`,
-      type: `string`
-    },
-    
-    billing_address: {
-      sql: `billing_address`,
-      type: `string`
-    },
-    
-    tax_id_type_id: {
-      sql: `tax_id_type_id`,
-      type: `string`
-    },
-    
-    updated_at: {
-      sql: `updated_at`,
+    updated_on: {
+      sql: `updated_on`,
       type: `time`
     }
   },
