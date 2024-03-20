@@ -1,5 +1,5 @@
-cube(`tenant_application_user_to_application_license_mapping`, {
-  sql_table: `public.tenant_application_user_to_application_license_mapping`,
+cube(`tau_to_al_mapping`, {
+  sql_table: `public.tau_to_al_mapping`,
   
   data_source: `default`,
   
