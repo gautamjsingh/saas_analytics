@@ -12,6 +12,10 @@ cube(`tenant_license_expense_transaction`, {
     tenant_user: {
       sql: `${CUBE}.tenant_user_id = ${tenant_user}.id`,
       relationship: `many_to_one`
+    },
+    application: {
+      sql: `${CUBE}.matched_application_id = ${application}.id`,  
+      relationship: `many_to_one`  
     }
   },
   
