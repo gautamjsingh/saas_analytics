@@ -101,12 +101,6 @@ cube(`tenant_application_license`, {
       sql: `unassigned_licenses`,
       type: `number`,
     },
-
-    license_type: {
-      sql: `license_type`,
-      type: `string`,
-    },
-
     updated_at: {
       sql: `updated_at`,
       type: `time`,
