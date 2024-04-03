@@ -52,9 +52,7 @@ cube(`license_type_count`, {
   },
   
   measures: {
-    count: {
-      type: `count`
-    }
+   
   },
   
   pre_aggregations: {
