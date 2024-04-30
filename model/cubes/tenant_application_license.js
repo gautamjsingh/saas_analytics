@@ -141,6 +141,10 @@ cube(`tenant_application_license`, {
       sql: `total_licenses`,
       type: `sum`,
     },
+    total_inactive_licenses: {
+      sql: `inactive_licenses`,
+      type: `sum`,
+    },
     unmapped_license_value: {
       sql: `${unassigned_licenses} * ${annual_cost_per_license}`,
       type: `sum`,
