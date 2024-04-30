@@ -7,7 +7,11 @@ cube(`user_identified_by`, {
     tenant_application_user: {
       sql: `${CUBE}.tenant_application_user_id = ${tenant_application_user}.id`,
       relationship: `many_to_one`
-    }
+    },
+    application: {
+      sql: `${CUBE}.app_id = ${application}.id`,
+      relationship: `many_to_one`,
+    },
   },
   
   dimensions: {

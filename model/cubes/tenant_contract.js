@@ -12,6 +12,11 @@ cube(`tenant_contract`, {
     application: {
       sql: `${CUBE}.application_id = ${application}.id`,
       relationship: `many_to_one`
+    },
+        
+    tenant_user: {
+      sql: `${CUBE}.contract_owner_id = ${tenant_user}.id`,
+      relationship: `many_to_one`
     }
   },
   

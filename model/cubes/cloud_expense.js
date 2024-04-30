@@ -4,74 +4,83 @@ cube(`cloud_expense`, {
   joins: {
     tenant: {
       sql: `${CUBE}.tenant_id = ${tenant}.id`,
-      relationship: `many_to_one`
+      relationship: `many_to_one`,
     },
     application: {
       sql: `${CUBE}.application_id = ${application}.id`,
-      relationship: `many_to_one`
-    }
+      relationship: `many_to_one`,
+    },
+    cloud_service_mapping: {
+      sql: `${CUBE}.cloud_service_type_id = ${cloud_service_mapping}.id`,
+      relationship: `many_to_one`,
+    },
+    tenant_chargeback_structure_definition: {
+      sql: `${CUBE}.cost_centre_id = ${tenant_chargeback_structure_definition}.id`,
+      relationship: `many_to_one`,
+    },
   },
   dimensions: {
     id: {
       sql: `id`,
       type: `string`,
-      primary_key: true
+      primary_key: true,
     },
     currency_id: {
       sql: `currency_id`,
-      type: `string`
+      type: `string`,
     },
     amount: {
       sql: `amount`,
-      type: `string`
+      type: `string`,
     },
     account_name: {
       sql: `account_name`,
-      type: `string`
+      type: `string`,
     },
     cost_centre_id: {
       sql: `cost_centre_id`,
-      type: `string`
+      type: `string`,
     },
     raw_response_data: {
       sql: `raw_response_data`,
-      type: `string`
+      type: `string`,
     },
     tenant_id: {
       sql: `tenant_id`,
-      type: `string`
+      type: `string`,
     },
     cloud_service_type_id: {
       sql: `cloud_service_type_id`,
-      type: `string`
+      type: `string`,
     },
     resource_id: {
       sql: `resource_id`,
-      type: `string`
+      type: `string`,
     },
     application_id: {
       sql: `application_id`,
-      type: `string`
+      type: `string`,
     },
     account_id: {
       sql: `account_id`,
-      type: `string`
+      type: `string`,
     },
     usage_date: {
       sql: `usage_date`,
-      type: `time`
-    }
+      type: `time`,
+    },
   },
   measures: {
     count: {
-      type: `count`
+      type: `count`,
     },
     total_amount: {
       sql: `amount`,
-      type: `sum`
-    }
+      type: `sum`,
+    },
   },
-  pre_aggregations: {// Pre-aggregation definitions go here.
+  pre_aggregations: {
+    // Pre-aggregation definitions go here.
     // Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started
-  }
+  },
 });

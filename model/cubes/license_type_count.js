@@ -52,6 +52,9 @@ cube(`license_type_count`, {
   },
   
   measures: {
+    license_count: {
+      type: `count`
+    }
    
   },
   

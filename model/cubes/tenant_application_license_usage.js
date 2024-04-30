@@ -46,6 +46,11 @@ cube(`tenant_application_license_usage`, {
   measures: {
     count: {
       type: `count`
+    },
+
+    count_accessed_on: {
+      sql: `accessed_on`,
+      type: `count`,
     }
   },
   

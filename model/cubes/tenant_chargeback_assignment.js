@@ -17,7 +17,12 @@ cube(`tenant_chargeback_assignment`, {
     application: {
       sql: `${CUBE}.application_id = ${application}.id`,
       relationship: `many_to_one`
-    }
+    },
+
+    license_type: {
+      sql: `${CUBE}.tenant_chargeback_strategy_configuration_id = ${license_type}.id`,
+      relationship: `many_to_one`
+    },
   },
   
   dimensions: {
