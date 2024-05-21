@@ -20,6 +20,10 @@ cube(`tenant_application_license`, {
       sql: `${CUBE}.id = ${tau_to_al_mapping}.tenant_application_license_id`,
       relationship: `one_to_many`,
     },
+    license_type: {
+      sql: `${CUBE}.license_type_id = ${license_type}.id`,
+      relationship: `one_to_many`,
+    },
   },
   
   dimensions: {
@@ -36,6 +40,10 @@ cube(`tenant_application_license`, {
     
     tenant_id: {
       sql: `tenant_id`,
+      type: `string`
+    },
+    license_type_id: {
+      sql: `license_type_id`,
       type: `string`
     },
     
@@ -89,7 +97,6 @@ cube(`tenant_application_license`, {
       sql: `is_most_recent`,
       type: `boolean`
     },
-    
     usage: {
       sql: `usage`,
       type: `string`

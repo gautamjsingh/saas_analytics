@@ -69,6 +69,10 @@ cube(`tenant_chargeback_assignment`, {
     assignment_date: {
       sql: `assignment_date`,
       type: `time`
+    },
+    is_most_current : {
+      sql: `is_most_current`,
+      type: `boolean`
     }
   },
   
