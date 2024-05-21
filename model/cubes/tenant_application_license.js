@@ -84,6 +84,11 @@ cube(`tenant_application_license`, {
       sql: `is_paid_license`,
       type: `string`
     },
+
+    is_most_recent: {
+      sql: `is_most_recent`,
+      type: `boolean`
+    },
     
     usage: {
       sql: `usage`,
