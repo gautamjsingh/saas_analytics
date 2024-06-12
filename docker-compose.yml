@@ -1,12 +1,23 @@
-version: "2.2"
- 
+
 services:
   cube:
     image: cubejs/cube:latest
     ports:
       - 4000:4000
       - 15432:15432
+    labels:
+      - 'traefik.http.routers.cube.service=cube'
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.cube.rule=Host(`${CUBE_APP_HOST}`)'
+      - 'traefik.http.routers.cube.entrypoints=websecure'
+      - 'traefik.http.routers.cube.tls=true'
+      - 'traefik.http.services.cube.loadbalancer.server.port=4000'
+    networks:
+      - saaseer_default
     environment:
       - CUBEJS_DEV_MODE=true
     volumes:
       - .:/cube/conf
+networks:
+  saaseer_default:
+    external: true
