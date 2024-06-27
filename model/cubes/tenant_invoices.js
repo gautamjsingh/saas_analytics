@@ -17,14 +17,14 @@ cube(`tenant_invoices`, {
       primary_key: true
     },
     
-    link: {
-      sql: `link`,
-      type: `string`
-    },
-    
     tenant_id: {
       sql: `tenant_id`,
       type: `string`
+    },
+    
+    amount: {
+      sql: `amount`,
+      type: `number`
     },
     
     currency_id: {
@@ -37,8 +37,8 @@ cube(`tenant_invoices`, {
       type: `string`
     },
     
-    transaction_date: {
-      sql: `transaction_date`,
+    link: {
+      sql: `link`,
       type: `string`
     },
     
@@ -47,9 +47,9 @@ cube(`tenant_invoices`, {
       type: `string`
     },
     
-    amount: {
-      sql: `amount`,
-      type: `number`
+    transaction_date: {
+      sql: `transaction_date`,
+      type: `string`
     },
     
     billed_month: {

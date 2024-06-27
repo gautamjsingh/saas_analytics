@@ -17,6 +17,16 @@ cube(`tenant_chargeback_structure`, {
       primary_key: true
     },
     
+    tenant_id: {
+      sql: `tenant_id`,
+      type: `string`
+    },
+    
+    added_by: {
+      sql: `added_by`,
+      type: `string`
+    },
+    
     name: {
       sql: `name`,
       type: `string`
@@ -27,18 +37,8 @@ cube(`tenant_chargeback_structure`, {
       type: `string`
     },
     
-    tenant_id: {
-      sql: `tenant_id`,
-      type: `string`
-    },
-    
     description: {
       sql: `description`,
-      type: `string`
-    },
-    
-    added_by: {
-      sql: `added_by`,
       type: `string`
     },
     

@@ -26,11 +26,6 @@ cube(`application`, {
       primary_key: true
     },
     
-    modulename: {
-      sql: `modulename`,
-      type: `string`
-    },
-    
     category_id: {
       sql: `category_id`,
       type: `string`
@@ -41,18 +36,18 @@ cube(`application`, {
       type: `string`
     },
     
-    about: {
-      sql: `about`,
-      type: `string`
-    },
-    
-    url: {
-      sql: `url`,
-      type: `string`
-    },
-    
     added_by: {
       sql: `added_by`,
+      type: `string`
+    },
+    
+    employee_source: {
+      sql: `employee_source`,
+      type: `string`
+    },
+    
+    application_name: {
+      sql: `application_name`,
       type: `string`
     },
     
@@ -61,13 +56,23 @@ cube(`application`, {
       type: `string`
     },
     
+    url: {
+      sql: `url`,
+      type: `string`
+    },
+    
+    about: {
+      sql: `about`,
+      type: `string`
+    },
+    
     transaction_entity_name: {
       sql: `transaction_entity_name`,
       type: `string`
     },
     
-    application_name: {
-      sql: `application_name`,
+    modulename: {
+      sql: `modulename`,
       type: `string`
     },
     

@@ -4,13 +4,13 @@ cube(`platform_subscription`, {
   data_source: `default`,
   
   joins: {
-    license_definition: {
-      sql: `${CUBE}.license_definition_id = ${license_definition}.id`,
+    tenant: {
+      sql: `${CUBE}.tenant_id = ${tenant}.id`,
       relationship: `many_to_one`
     },
     
-    tenant: {
-      sql: `${CUBE}.tenant_id = ${tenant}.id`,
+    license_definition: {
+      sql: `${CUBE}.license_definition_id = ${license_definition}.id`,
       relationship: `many_to_one`
     }
   },
@@ -22,8 +22,8 @@ cube(`platform_subscription`, {
       primary_key: true
     },
     
-    billing_information: {
-      sql: `billing_information`,
+    tenant_id: {
+      sql: `tenant_id`,
       type: `string`
     },
     
@@ -37,18 +37,18 @@ cube(`platform_subscription`, {
       type: `string`
     },
     
-    tenant_id: {
-      sql: `tenant_id`,
-      type: `string`
-    },
-    
     plan_id: {
       sql: `plan_id`,
       type: `string`
     },
     
-    expiry_date: {
-      sql: `expiry_date`,
+    billing_information: {
+      sql: `billing_information`,
+      type: `string`
+    },
+    
+    started_on: {
+      sql: `started_on`,
       type: `time`
     },
     
@@ -57,8 +57,8 @@ cube(`platform_subscription`, {
       type: `time`
     },
     
-    started_on: {
-      sql: `started_on`,
+    expiry_date: {
+      sql: `expiry_date`,
       type: `time`
     }
   },

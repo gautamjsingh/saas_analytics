@@ -17,6 +17,11 @@ cube(`tenant_user_roles`, {
       primary_key: true
     },
     
+    tenant_id: {
+      sql: `tenant_id`,
+      type: `string`
+    },
+    
     name: {
       sql: `name`,
       type: `string`
@@ -24,11 +29,6 @@ cube(`tenant_user_roles`, {
     
     description: {
       sql: `description`,
-      type: `string`
-    },
-    
-    tenant_id: {
-      sql: `tenant_id`,
       type: `string`
     }
   },

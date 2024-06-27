@@ -1,5 +1,5 @@
-cube(`tenant_notification_category`, {
-  sql_table: `public.tenant_notification_category`,
+cube(`connection_raw_data`, {
+  sql_table: `public.connection_raw_data`,
   
   data_source: `default`,
   
@@ -14,33 +14,33 @@ cube(`tenant_notification_category`, {
       primary_key: true
     },
     
-    notification_category_id: {
-      sql: `notification_category_id`,
+    connection_id: {
+      sql: `connection_id`,
       type: `string`
     },
     
-    notification_type_id: {
-      sql: `notification_type_id`,
+    raw_response: {
+      sql: `raw_response`,
       type: `string`
     },
     
-    template_id: {
-      sql: `template_id`,
+    request_details: {
+      sql: `request_details`,
       type: `string`
     },
     
-    values: {
-      sql: `values`,
+    is_processed: {
+      sql: `is_processed`,
       type: `string`
     },
     
-    rules: {
-      sql: `rules`,
-      type: `string`
+    processed_on: {
+      sql: `processed_on`,
+      type: `time`
     },
     
-    added_on: {
-      sql: `added_on`,
+    fetched_on: {
+      sql: `fetched_on`,
       type: `time`
     }
   },

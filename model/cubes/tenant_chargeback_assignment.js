@@ -4,25 +4,24 @@ cube(`tenant_chargeback_assignment`, {
   data_source: `default`,
   
   joins: {
-    tenant_chargeback_strategy_configuration: {
-      sql: `${CUBE}.tenant_chargeback_strategy_configuration_id = ${tenant_chargeback_strategy_configuration}.id`,
-      relationship: `many_to_one`
-    },
-    
     tenant: {
       sql: `${CUBE}.tenant_id = ${tenant}.id`,
       relationship: `many_to_one`
     },
     
-    application: {
-      sql: `${CUBE}.application_id = ${application}.id`,
-      relationship: `many_to_one`
-    },
-
     license_type: {
-      sql: `${CUBE}.tenant_chargeback_strategy_configuration_id = ${license_type}.id`,
+      sql: `${CUBE}.license_type_id = ${license_type}.id`,
       relationship: `many_to_one`
     },
+    tenant_application_connection: {
+      sql: `${CUBE}.connection_id = ${tenant_application_connection}.id`,
+      relationship: `one_to_many`,
+    },
+    
+    tenant_chargeback_strategy_configuration: {
+      sql: `${CUBE}.tenant_chargeback_strategy_configuration_id = ${tenant_chargeback_strategy_configuration}.id`,
+      relationship: `many_to_one`
+    }
   },
   
   dimensions: {
@@ -32,28 +31,28 @@ cube(`tenant_chargeback_assignment`, {
       primary_key: true
     },
     
-    license_type: {
-      sql: `license_type`,
-      type: `string`
-    },
-    
-    tenant_chargeback_strategy_configuration_id: {
-      sql: `tenant_chargeback_strategy_configuration_id`,
-      type: `string`
-    },
-    
     tenant_id: {
       sql: `tenant_id`,
       type: `string`
     },
     
-    amount: {
-      sql: `amount`,
-      type: `number`
-    },
-    
     cost_centre_id: {
       sql: `cost_centre_id`,
+      type: `string`
+    },
+    
+    connection_id: {
+      sql: `connection_id`,
+      type: `string`
+    },
+    
+    amount: {
+      sql: `amount`,
+      type: `string`
+    },
+    
+    license_type_id: {
+      sql: `license_type_id`,
       type: `string`
     },
     
@@ -62,8 +61,8 @@ cube(`tenant_chargeback_assignment`, {
       type: `string`
     },
     
-    application_id: {
-      sql: `application_id`,
+    tenant_chargeback_strategy_configuration_id: {
+      sql: `tenant_chargeback_strategy_configuration_id`,
       type: `string`
     },
     
@@ -87,7 +86,7 @@ cube(`tenant_chargeback_assignment`, {
       sql: `total_user_count`,
       type: `sum`
     },
-    total_amoun: {
+    total_amount: {
       sql: `amount`,
       type: `sum`
     }

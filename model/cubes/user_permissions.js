@@ -14,13 +14,23 @@ cube(`user_permissions`, {
       primary_key: true
     },
     
+    code: {
+      sql: `code`,
+      type: `string`
+    },
+    
+    name: {
+      sql: `name`,
+      type: `string`
+    },
+    
     description: {
       sql: `description`,
       type: `string`
     },
     
-    code: {
-      sql: `code`,
+    groups: {
+      sql: `groups`,
       type: `string`
     }
   },

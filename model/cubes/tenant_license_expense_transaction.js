@@ -26,53 +26,8 @@ cube(`tenant_license_expense_transaction`, {
       primary_key: true
     },
     
-    last_updated_by: {
-      sql: `last_updated_by`,
-      type: `string`
-    },
-    
-    source: {
-      sql: `source`,
-      type: `string`
-    },
-    
-    transaction_reporting_mode_id: {
-      sql: `transaction_reporting_mode_id`,
-      type: `string`
-    },
-    
-    matching_status_id: {
-      sql: `matching_status_id`,
-      type: `string`
-    },
-    
-    currency_id: {
-      sql: `currency_id`,
-      type: `string`
-    },
-    
-    amount: {
-      sql: `amount`,
-      type: `number`
-    },
-    
     matched_application_id: {
       sql: `matched_application_id`,
-      type: `string`
-    },
-    
-    payment_mode_id: {
-      sql: `payment_mode_id`,
-      type: `string`
-    },
-    
-    transaction_file_id: {
-      sql: `transaction_file_id`,
-      type: `string`
-    },
-    
-    expense_transaction_status_id: {
-      sql: `expense_transaction_status_id`,
       type: `string`
     },
     
@@ -86,13 +41,28 @@ cube(`tenant_license_expense_transaction`, {
       type: `string`
     },
     
-    description: {
-      sql: `description`,
+    expense_transaction_status_id: {
+      sql: `expense_transaction_status_id`,
       type: `string`
     },
     
-    is_archived: {
-      sql: `is_archived`,
+    amount: {
+      sql: `amount`,
+      type: `number`
+    },
+    
+    currency_id: {
+      sql: `currency_id`,
+      type: `string`
+    },
+    
+    payment_mode_id: {
+      sql: `payment_mode_id`,
+      type: `string`
+    },
+    
+    transaction_reporting_mode_id: {
+      sql: `transaction_reporting_mode_id`,
       type: `string`
     },
     
@@ -101,18 +71,48 @@ cube(`tenant_license_expense_transaction`, {
       type: `string`
     },
     
+    last_updated_by: {
+      sql: `last_updated_by`,
+      type: `string`
+    },
+    
+    is_archived: {
+      sql: `is_archived`,
+      type: `string`
+    },
+    
+    matching_status_id: {
+      sql: `matching_status_id`,
+      type: `string`
+    },
+    
+    transaction_file_id: {
+      sql: `transaction_file_id`,
+      type: `string`
+    },
+    
+    source: {
+      sql: `source`,
+      type: `string`
+    },
+    
+    description: {
+      sql: `description`,
+      type: `string`
+    },
+    
     updated_at: {
       sql: `updated_at`,
       type: `time`
     },
     
-    transaction_date: {
-      sql: `transaction_date`,
+    added_at: {
+      sql: `added_at`,
       type: `time`
     },
     
-    added_at: {
-      sql: `added_at`,
+    transaction_date: {
+      sql: `transaction_date`,
       type: `time`
     }
   },

@@ -1,16 +1,21 @@
-cube(`tenant_application_connection`, {
-  sql_table: `public.tenant_application_connection`,
+cube(`tenant_chargeback_report`, {
+  sql_table: `public.tenant_chargeback_report`,
   
   data_source: `default`,
   
   joins: {
+    tenant: {
+      sql: `${CUBE}.tenant_id = ${tenant}.id`,
+      relationship: `many_to_one`
+    },
+    
     application: {
       sql: `${CUBE}.application_id = ${application}.id`,
       relationship: `many_to_one`
     },
     
-    tenant: {
-      sql: `${CUBE}.tenant_id = ${tenant}.id`,
+    license_type: {
+      sql: `${CUBE}.license_type_id = ${license_type}.id`,
       relationship: `many_to_one`
     }
   },
@@ -22,54 +27,39 @@ cube(`tenant_application_connection`, {
       primary_key: true
     },
     
-    application_id: {
-      sql: `application_id`,
-      type: `string`
-    },
-    
     tenant_id: {
       sql: `tenant_id`,
       type: `string`
     },
     
-    optional_field_data: {
-      sql: `optional_field_data`,
+    application_id: {
+      sql: `application_id`,
       type: `string`
     },
     
-    is_connection_error: {
-      sql: `is_connection_error`,
+    cost_centre_id: {
+      sql: `cost_centre_id`,
       type: `string`
     },
     
-    error_details: {
-      sql: `error_details`,
+    total_amount: {
+      sql: `total_amount`,
       type: `string`
     },
     
-    connection_data: {
-      sql: `connection_data`,
+    license_count: {
+      sql: `license_count`,
       type: `string`
     },
     
-    name: {
-      sql: `name`,
+    license_type_id: {
+      sql: `license_type_id`,
       type: `string`
     },
     
-    description: {
-      sql: `description`,
+    currency_id: {
+      sql: `currency_id`,
       type: `string`
-    },
-    
-    updated_at: {
-      sql: `updated_at`,
-      type: `time`
-    },
-    
-    last_refreshed_at: {
-      sql: `last_refreshed_at`,
-      type: `time`
     }
   },
   

@@ -1,5 +1,5 @@
-cube(`contract_custom_field_configuration_history`, {
-  sql_table: `public.contract_custom_field_configuration_history`,
+cube(`custom_field_configuration_history`, {
+  sql_table: `public.custom_field_configuration_history`,
   
   data_source: `default`,
   
@@ -14,6 +14,11 @@ cube(`contract_custom_field_configuration_history`, {
       primary_key: true
     },
     
+    configuration_id: {
+      sql: `configuration_id`,
+      type: `string`
+    },
+    
     config_data: {
       sql: `config_data`,
       type: `string`
@@ -21,11 +26,6 @@ cube(`contract_custom_field_configuration_history`, {
     
     updated_by: {
       sql: `updated_by`,
-      type: `string`
-    },
-    
-    configuration_id: {
-      sql: `configuration_id`,
       type: `string`
     },
     

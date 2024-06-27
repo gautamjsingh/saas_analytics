@@ -1,10 +1,13 @@
-cube(`plan_details`, {
-  sql_table: `public.plan_details`,
+cube(`planned_expenses`, {
+  sql_table: `public.planned_expenses`,
   
   data_source: `default`,
   
   joins: {
-    
+    tenant: {
+      sql: `${CUBE}.tenant_id = ${tenant}.id`,
+      relationship: `many_to_one`
+    }
   },
   
   dimensions: {
@@ -14,23 +17,13 @@ cube(`plan_details`, {
       primary_key: true
     },
     
-    rate_configuration: {
-      sql: `rate_configuration`,
+    tenant_id: {
+      sql: `tenant_id`,
       type: `string`
     },
     
-    name: {
-      sql: `name`,
-      type: `string`
-    },
-    
-    description: {
-      sql: `description`,
-      type: `string`
-    },
-    
-    added_on: {
-      sql: `added_on`,
+    year: {
+      sql: `year`,
       type: `time`
     }
   },

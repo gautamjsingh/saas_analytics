@@ -4,13 +4,13 @@ cube(`global_constants`, {
   data_source: `default`,
   
   joins: {
-    tenant: {
-      sql: `${CUBE}.tenant_id = ${tenant}.id`,
+    constant_type: {
+      sql: `${CUBE}.constant_type_id = ${constant_type}.id`,
       relationship: `many_to_one`
     },
     
-    constant_type: {
-      sql: `${CUBE}.constant_type_id = ${constant_type}.id`,
+    tenant: {
+      sql: `${CUBE}.tenant_id = ${tenant}.id`,
       relationship: `many_to_one`
     }
   },
@@ -22,8 +22,8 @@ cube(`global_constants`, {
       primary_key: true
     },
     
-    name: {
-      sql: `name`,
+    constant_type_id: {
+      sql: `constant_type_id`,
       type: `string`
     },
     
@@ -32,8 +32,8 @@ cube(`global_constants`, {
       type: `string`
     },
     
-    constant_type_id: {
-      sql: `constant_type_id`,
+    name: {
+      sql: `name`,
       type: `string`
     }
   },

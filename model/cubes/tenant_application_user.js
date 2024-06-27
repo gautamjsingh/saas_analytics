@@ -17,51 +17,6 @@ cube(`tenant_application_user`, {
       primary_key: true
     },
     
-    user_classfication_type_id: {
-      sql: `user_classfication_type_id`,
-      type: `string`
-    },
-    
-    email: {
-      sql: `email`,
-      type: `string`
-    },
-    
-    user_status_id: {
-      sql: `user_status_id`,
-      type: `string`
-    },
-    
-    last_name: {
-      sql: `last_name`,
-      type: `string`
-    },
-    
-    invitation_link: {
-      sql: `invitation_link`,
-      type: `string`
-    },
-    
-    middle_name: {
-      sql: `middle_name`,
-      type: `string`
-    },
-    
-    invitation_status: {
-      sql: `invitation_status`,
-      type: `string`
-    },
-    
-    first_name: {
-      sql: `first_name`,
-      type: `string`
-    },
-    
-    cost_centre_id: {
-      sql: `cost_centre_id`,
-      type: `string`
-    },
-    
     tenant_id: {
       sql: `tenant_id`,
       type: `string`
@@ -72,8 +27,58 @@ cube(`tenant_application_user`, {
       type: `string`
     },
     
+    user_classfication_type_id: {
+      sql: `user_classfication_type_id`,
+      type: `string`
+    },
+    
+    user_status_id: {
+      sql: `user_status_id`,
+      type: `string`
+    },
+    
+    cost_centre_id: {
+      sql: `cost_centre_id`,
+      type: `string`
+    },
+    
+    invitation_link: {
+      sql: `invitation_link`,
+      type: `string`
+    },
+    
+    invitation_status: {
+      sql: `invitation_status`,
+      type: `string`
+    },
+    
+    email: {
+      sql: `email`,
+      type: `string`
+    },
+    
+    first_name: {
+      sql: `first_name`,
+      type: `string`
+    },
+    
+    middle_name: {
+      sql: `middle_name`,
+      type: `string`
+    },
+    
+    last_name: {
+      sql: `last_name`,
+      type: `string`
+    },
+    
     updated_at: {
       sql: `updated_at`,
+      type: `time`
+    },
+    
+    activated_on: {
+      sql: `activated_on`,
       type: `time`
     },
     
@@ -84,11 +89,6 @@ cube(`tenant_application_user`, {
     
     last_recorded_usage: {
       sql: `last_recorded_usage`,
-      type: `time`
-    },
-    
-    activated_on: {
-      sql: `activated_on`,
       type: `time`
     }
   },

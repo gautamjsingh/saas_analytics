@@ -17,13 +17,23 @@ cube(`tenant`, {
       primary_key: true
     },
     
-    description: {
-      sql: `description`,
+    tax_id_type_id: {
+      sql: `tax_id_type_id`,
       type: `string`
     },
     
     currency_id: {
       sql: `currency_id`,
+      type: `string`
+    },
+    
+    country_id: {
+      sql: `country_id`,
+      type: `string`
+    },
+    
+    settings: {
+      sql: `settings`,
       type: `string`
     },
     
@@ -37,8 +47,8 @@ cube(`tenant`, {
       type: `string`
     },
     
-    country_id: {
-      sql: `country_id`,
+    description: {
+      sql: `description`,
       type: `string`
     },
     
@@ -49,11 +59,6 @@ cube(`tenant`, {
     
     billing_address: {
       sql: `billing_address`,
-      type: `string`
-    },
-    
-    tax_id_type_id: {
-      sql: `tax_id_type_id`,
       type: `string`
     },
     

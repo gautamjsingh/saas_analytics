@@ -8,12 +8,10 @@ cube(`tenant_contract`, {
       sql: `${CUBE}.tenant_id = ${tenant}.id`,
       relationship: `many_to_one`
     },
-    
-    application: {
-      sql: `${CUBE}.application_id = ${application}.id`,
-      relationship: `many_to_one`
+    tenant_application_connection: {
+      sql: `${CUBE}.connection_id = ${tenant_application_connection}.id`,
+      relationship: `one_to_many`,
     },
-        
     tenant_user: {
       sql: `${CUBE}.contract_owner_id = ${tenant_user}.id`,
       relationship: `many_to_one`
@@ -27,43 +25,23 @@ cube(`tenant_contract`, {
       primary_key: true
     },
     
-    tenant_contract_status_id: {
-      sql: `tenant_contract_status_id`,
-      type: `string`
-    },
-    
-    added_by: {
-      sql: `added_by`,
-      type: `string`
-    },
-    
-    name: {
-      sql: `name`,
-      type: `string`
-    },
-    
     tenant_id: {
       sql: `tenant_id`,
       type: `string`
     },
     
-    description: {
-      sql: `description`,
+    tenant_contract_status_id: {
+      sql: `tenant_contract_status_id`,
       type: `string`
     },
     
-    contract_owner_id: {
-      sql: `contract_owner_id`,
+    connection_id: {
+      sql: `connection_id`,
       type: `string`
     },
     
     contract_value: {
       sql: `contract_value`,
-      type: `number`
-    },
-    
-    optional_field_data: {
-      sql: `optional_field_data`,
       type: `string`
     },
     
@@ -72,18 +50,33 @@ cube(`tenant_contract`, {
       type: `string`
     },
     
-    application_id: {
-      sql: `application_id`,
+    added_by: {
+      sql: `added_by`,
+      type: `string`
+    },
+    
+    contract_owner_id: {
+      sql: `contract_owner_id`,
+      type: `string`
+    },
+    
+    optional_field_data: {
+      sql: `optional_field_data`,
+      type: `string`
+    },
+    
+    name: {
+      sql: `name`,
+      type: `string`
+    },
+    
+    description: {
+      sql: `description`,
       type: `string`
     },
     
     last_updated_on: {
       sql: `last_updated_on`,
-      type: `time`
-    },
-    
-    added_on: {
-      sql: `added_on`,
       type: `time`
     },
     
@@ -94,6 +87,11 @@ cube(`tenant_contract`, {
     
     end_date: {
       sql: `end_date`,
+      type: `time`
+    },
+    
+    added_on: {
+      sql: `added_on`,
       type: `time`
     }
   },

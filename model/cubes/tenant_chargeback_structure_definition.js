@@ -22,23 +22,13 @@ cube(`tenant_chargeback_structure_definition`, {
       primary_key: true
     },
     
-    code: {
-      sql: `code`,
-      type: `string`
-    },
-    
-    cost_centre_id: {
-      sql: `cost_centre_id`,
-      type: `string`
-    },
-    
-    description: {
-      sql: `description`,
-      type: `string`
-    },
-    
     tenant_id: {
       sql: `tenant_id`,
+      type: `string`
+    },
+    
+    parent_id: {
+      sql: `parent_id`,
       type: `string`
     },
     
@@ -47,8 +37,18 @@ cube(`tenant_chargeback_structure_definition`, {
       type: `string`
     },
     
-    parent_id: {
-      sql: `parent_id`,
+    cost_centre_id: {
+      sql: `cost_centre_id`,
+      type: `string`
+    },
+    
+    code: {
+      sql: `code`,
+      type: `string`
+    },
+    
+    description: {
+      sql: `description`,
       type: `string`
     },
     

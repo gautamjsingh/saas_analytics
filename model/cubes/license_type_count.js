@@ -4,16 +4,17 @@ cube(`license_type_count`, {
   data_source: `default`,
   
   joins: {
-    application: {
-      sql: `${CUBE}.application_id = ${application}.id`,
-      relationship: `many_to_one`,
-    },
-    tenant: {
-      sql: `${CUBE}.tenant_id = ${tenant}.id`,
+    tenant_application_connection: {
+      sql: `${CUBE}.connection_id = ${tenant_application_connection}.id`,
       relationship: `many_to_one`,
     },
     license_type: {
       sql: `${CUBE}.license_type_id = ${license_type}.id`,
+      relationship: `many_to_one`
+    },
+    
+    tenant: {
+      sql: `${CUBE}.tenant_id = ${tenant}.id`,
       relationship: `many_to_one`
     }
   },
@@ -25,8 +26,8 @@ cube(`license_type_count`, {
       primary_key: true
     },
     
-    application_id: {
-      sql: `application_id`,
+    connection_id: {
+      sql: `connection_id`,
       type: `string`
     },
     
@@ -48,6 +49,11 @@ cube(`license_type_count`, {
     updated_at: {
       sql: `updated_at`,
       type: `time`
+    },
+    
+    transaction_date: {
+      sql: `transaction_date`,
+      type: `time`
     }
   },
   
@@ -55,7 +61,6 @@ cube(`license_type_count`, {
     license_count: {
       type: `count`
     }
-   
   },
   
   pre_aggregations: {

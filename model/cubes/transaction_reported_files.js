@@ -14,8 +14,13 @@ cube(`transaction_reported_files`, {
       primary_key: true
     },
     
-    file_name: {
-      sql: `file_name`,
+    reported_by: {
+      sql: `reported_by`,
+      type: `string`
+    },
+    
+    file_attribute_match: {
+      sql: `file_attribute_match`,
       type: `string`
     },
     
@@ -24,13 +29,8 @@ cube(`transaction_reported_files`, {
       type: `string`
     },
     
-    reported_by: {
-      sql: `reported_by`,
-      type: `string`
-    },
-    
-    file_attribute_match: {
-      sql: `file_attribute_match`,
+    file_name: {
+      sql: `file_name`,
       type: `string`
     },
     

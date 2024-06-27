@@ -17,13 +17,13 @@ cube(`application_subcategory`, {
       primary_key: true
     },
     
-    name: {
-      sql: `name`,
+    category_id: {
+      sql: `category_id`,
       type: `string`
     },
     
-    category_id: {
-      sql: `category_id`,
+    name: {
+      sql: `name`,
       type: `string`
     }
   },

@@ -14,6 +14,11 @@ cube(`todo`, {
       primary_key: true
     },
     
+    added_by: {
+      sql: `added_by`,
+      type: `string`
+    },
+    
     description: {
       sql: `description`,
       type: `string`
@@ -21,11 +26,6 @@ cube(`todo`, {
     
     name: {
       sql: `name`,
-      type: `string`
-    },
-    
-    added_by: {
-      sql: `added_by`,
       type: `string`
     },
     

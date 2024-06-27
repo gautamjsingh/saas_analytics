@@ -14,8 +14,8 @@ cube(`role_permissions`, {
       primary_key: true
     },
     
-    permission_value: {
-      sql: `permission_value`,
+    role_id: {
+      sql: `role_id`,
       type: `string`
     },
     
@@ -24,8 +24,8 @@ cube(`role_permissions`, {
       type: `string`
     },
     
-    role_id: {
-      sql: `role_id`,
+    permission_value: {
+      sql: `permission_value`,
       type: `string`
     }
   },

@@ -1,5 +1,5 @@
-cube(`contract_custom_field_configuration`, {
-  sql_table: `public.contract_custom_field_configuration`,
+cube(`custom_field_configuration`, {
+  sql_table: `public.custom_field_configuration`,
   
   data_source: `default`,
   
@@ -22,6 +22,11 @@ cube(`contract_custom_field_configuration`, {
       type: `string`
     },
     
+    tenant_id: {
+      sql: `tenant_id`,
+      type: `string`
+    },
+    
     custom_field_configuration_type: {
       sql: `custom_field_configuration_type`,
       type: `string`
@@ -29,11 +34,6 @@ cube(`contract_custom_field_configuration`, {
     
     link: {
       sql: `link`,
-      type: `string`
-    },
-    
-    tenant_id: {
-      sql: `tenant_id`,
       type: `string`
     }
   },

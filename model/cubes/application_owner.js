@@ -3,12 +3,11 @@ cube(`application_owner`, {
   
   data_source: `default`,
   
-  joins: {
+  joins: { 
     application: {
-      sql: `${CUBE}.application_id = ${application}.id`,
-      relationship: `many_to_one`
-    },
-    
+    sql: `${CUBE}.application_id = ${application}.id`,
+    relationship: `many_to_one`
+  },
     tenant_user: {
       sql: `${CUBE}.tenant_user_id = ${tenant_user}.id`,
       relationship: `many_to_one`
@@ -22,13 +21,8 @@ cube(`application_owner`, {
       primary_key: true
     },
     
-    is_primary: {
-      sql: `is_primary`,
-      type: `string`
-    },
-    
-    application_id: {
-      sql: `application_id`,
+    connection_id: {
+      sql: `connection_id`,
       type: `string`
     },
     
@@ -39,6 +33,11 @@ cube(`application_owner`, {
     
     added_by: {
       sql: `added_by`,
+      type: `string`
+    },
+    
+    is_primary: {
+      sql: `is_primary`,
       type: `string`
     },
     

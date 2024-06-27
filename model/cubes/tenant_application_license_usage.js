@@ -4,13 +4,13 @@ cube(`tenant_application_license_usage`, {
   data_source: `default`,
   
   joins: {
-    tenant_application_license: {
-      sql: `${CUBE}.tenant_application_license_id = ${tenant_application_license}.id`,
+    tenant_application_user: {
+      sql: `${CUBE}.tenant_application_user_id = ${tenant_application_user}.id`,
       relationship: `many_to_one`
     },
     
-    tenant_application_user: {
-      sql: `${CUBE}.tenant_application_user_id = ${tenant_application_user}.id`,
+    tenant_application_license: {
+      sql: `${CUBE}.tenant_application_license_id = ${tenant_application_license}.id`,
       relationship: `many_to_one`
     }
   },
@@ -22,13 +22,13 @@ cube(`tenant_application_license_usage`, {
       primary_key: true
     },
     
-    tenant_application_license_id: {
-      sql: `tenant_application_license_id`,
+    tenant_application_user_id: {
+      sql: `tenant_application_user_id`,
       type: `string`
     },
     
-    tenant_application_user_id: {
-      sql: `tenant_application_user_id`,
+    tenant_application_license_id: {
+      sql: `tenant_application_license_id`,
       type: `string`
     },
     
@@ -46,11 +46,6 @@ cube(`tenant_application_license_usage`, {
   measures: {
     count: {
       type: `count`
-    },
-
-    count_accessed_on: {
-      sql: `accessed_on`,
-      type: `count`,
     }
   },
   

@@ -8,9 +8,8 @@ cube(`data_refresh_configuration`, {
       sql: `${CUBE}.tenant_id = ${tenant}.id`,
       relationship: `many_to_one`
     },
-    
-    application: {
-      sql: `${CUBE}.application_id = ${application}.id`,
+    tenant_application_connection: {
+      sql: `${CUBE}.application_id = ${tenant_application_connection}.id`,
       relationship: `many_to_one`
     }
   },
@@ -22,8 +21,8 @@ cube(`data_refresh_configuration`, {
       primary_key: true
     },
     
-    refresh_frequency_in_days: {
-      sql: `refresh_frequency_in_days`,
+    connection_id: {
+      sql: `connection_id`,
       type: `string`
     },
     
@@ -32,8 +31,8 @@ cube(`data_refresh_configuration`, {
       type: `string`
     },
     
-    application_id: {
-      sql: `application_id`,
+    refresh_frequency_in_days: {
+      sql: `refresh_frequency_in_days`,
       type: `string`
     },
     
@@ -54,5 +53,3 @@ cube(`data_refresh_configuration`, {
     // Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started
   }
 });
-
-

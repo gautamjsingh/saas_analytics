@@ -17,8 +17,8 @@ cube(`tenant_user`, {
       primary_key: true
     },
     
-    middle_name: {
-      sql: `middle_name`,
+    is_active: {
+      sql: `is_active`,
       type: `string`
     },
     
@@ -32,18 +32,18 @@ cube(`tenant_user`, {
       type: `string`
     },
     
-    first_name: {
-      sql: `first_name`,
-      type: `string`
-    },
-    
     email: {
       sql: `email`,
       type: `string`
     },
     
-    is_active: {
-      sql: `is_active`,
+    first_name: {
+      sql: `first_name`,
+      type: `string`
+    },
+    
+    middle_name: {
+      sql: `middle_name`,
       type: `string`
     },
     
@@ -57,6 +57,11 @@ cube(`tenant_user`, {
       type: `time`
     },
     
+    activated_on: {
+      sql: `activated_on`,
+      type: `time`
+    },
+    
     deactivated_on: {
       sql: `deactivated_on`,
       type: `time`
@@ -64,11 +69,6 @@ cube(`tenant_user`, {
     
     last_accessed_on: {
       sql: `last_accessed_on`,
-      type: `time`
-    },
-    
-    activated_on: {
-      sql: `activated_on`,
       type: `time`
     }
   },

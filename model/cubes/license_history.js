@@ -6,14 +6,13 @@ cube(`license_history`, {
   joins: {
     application: {
       sql: `${CUBE}.application_id = ${application}.id`,
-      relationship: `many_to_one`,
+      relationship: `many_to_one`
     },
     
     tenant: {
       sql: `${CUBE}.tenant_id = ${tenant}.id`,
-      relationship: `many_to_one`,
+      relationship: `many_to_one`
     },
-
     global_constants: {
       sql: `${CUBE}.license_status_id = ${global_constants}.id`,
       relationship: `many_to_one`,
@@ -77,8 +76,8 @@ cube(`license_history`, {
       type: `string`
     },
     
-    tenant_application_license_status_id: {
-      sql: `tenant_application_license_status_id`,
+    license_status_id: {
+      sql: `license_status_id`,
       type: `string`
     },
     

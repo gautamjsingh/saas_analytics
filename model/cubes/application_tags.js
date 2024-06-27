@@ -3,12 +3,11 @@ cube(`application_tags`, {
   
   data_source: `default`,
   
-  joins: {
+  joins: { 
     tag: {
-      sql: `${CUBE}.tag_id = ${tag}.id`,
-      relationship: `many_to_one`
-    },
-    
+    sql: `${CUBE}.tag_id = ${tag}.id`,
+    relationship: `many_to_one`
+  },
     application: {
       sql: `${CUBE}.application_id = ${application}.id`,
       relationship: `many_to_one`
@@ -27,13 +26,13 @@ cube(`application_tags`, {
       primary_key: true
     },
     
-    tag_id: {
-      sql: `tag_id`,
+    application_id: {
+      sql: `application_id`,
       type: `string`
     },
     
-    application_id: {
-      sql: `application_id`,
+    tag_id: {
+      sql: `tag_id`,
       type: `string`
     },
     

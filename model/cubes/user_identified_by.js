@@ -21,8 +21,8 @@ cube(`user_identified_by`, {
       primary_key: true
     },
     
-    app_id: {
-      sql: `app_id`,
+    tenant_application_user_id: {
+      sql: `tenant_application_user_id`,
       type: `string`
     },
     
@@ -31,8 +31,8 @@ cube(`user_identified_by`, {
       type: `string`
     },
     
-    tenant_application_user_id: {
-      sql: `tenant_application_user_id`,
+    app_id: {
+      sql: `app_id`,
       type: `string`
     },
     
